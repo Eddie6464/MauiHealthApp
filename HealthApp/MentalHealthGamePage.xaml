@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HealthApp.MentalHealthGamePage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            BackgroundColor="#CDF5FC">
+
+            <Label
+                Text="Mental Health Game"
+                HorizontalOptions="Fill"
+                TextColor="#1F6775"
+                BackgroundColor="#7EDCED"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Grid x:Name="Grid" HeightRequest="350" WidthRequest="350" HorizontalOptions="Center">
+                <Grid.RowDefinitions>
+                     <RowDefinition Height="*" />
+                     <RowDefinition Height="*" />
+                     <RowDefinition Height="*" />
+                     <RowDefinition Height="*" />
+                     <RowDefinition Height="*" />
+                     <RowDefinition Height="*" />
+                     <RowDefinition Height="*" />
+                     <RowDefinition Height="*" />
+                     <RowDefinition Height="*" />
+                     <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+            
+                <Grid.ColumnDefinitions>
+                     <ColumnDefinition Width="*" />
+                     <ColumnDefinition Width="*" />
+                     <ColumnDefinition Width="*" />
+                     <ColumnDefinition Width="*" />
+                     <ColumnDefinition Width="*" />
+                     <ColumnDefinition Width="*" />
+                     <ColumnDefinition Width="*" />
+                     <ColumnDefinition Width="*" />
+                     <ColumnDefinition Width="*" />
+                     <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+            </Grid>
+
+            <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="End">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                     <Button Text="↑" WidthRequest="75" HeightRequest="75" BackgroundColor="#7EDCED" TextColor="#1F6775" Clicked="OnUpClick"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                     <Button Text="←" WidthRequest="75" HeightRequest="75" BackgroundColor="#7EDCED" TextColor="#1F6775" Clicked="OnLeftClick"/>
+                     <Button Text="↓" WidthRequest="75" HeightRequest="75" BackgroundColor="#7EDCED" TextColor="#1F6775" Clicked="OnDownClick"/>
+                     <Button Text="→" WidthRequest="75" HeightRequest="75" BackgroundColor="#7EDCED" TextColor="#1F6775" Clicked="OnRightClick"/>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Orientation="Vertical" HorizontalOptions="Start" VerticalOptions="End">
+                <StackLayout Orientation="Horizontal">
+                     <Button
+                          x:Name="BackBtn"
+                          Padding="30"
+                          Clicked="OnBackClick"
+                          HorizontalOptions="Start"
+                          TextColor="#338733"
+                          BackgroundColor="#8CE48C"
+                          Text="Back" 
+                          FontSize="Medium"/>
+                    <Button
+                          x:Name="ScoresBtn"
+                          Padding="20"
+                          Clicked="OnScoresClick"
+                          HorizontalOptions="End"
+                          TextColor="#663A1C"
+                          BackgroundColor="#EAB28C"
+                          Text="Scores"
+                          FontSize="Medium"/>
+                </StackLayout>
+            </StackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

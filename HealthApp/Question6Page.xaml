@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HealthApp.Question6Page">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            BackgroundColor="#F5CDAA">
+
+            <Label
+                Text="Question 6"
+                HorizontalOptions="Fill"
+                TextColor="#875A32"
+                BackgroundColor="#EDB27E"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                Text="How often do you get out in nature?, with 1 being never, and 5 being frequently"
+                FontSize="Small"
+                Padding="25"
+                HorizontalOptions="Fill"
+                TextColor="#875A32"
+                BackgroundColor="#EDB27E"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Button
+                x:Name="OneBtn"
+                Padding="10"
+                Text="1" 
+                TextColor="#542A7A"
+                BackgroundColor="#B97EED"
+                FontSize="Small"
+                VerticalOptions="Fill"
+                Clicked="On1Click"
+                 />
+            
+            <Button
+                x:Name="TwoBtn"
+                Padding="10"
+                Text="2" 
+                TextColor="#542A7A"
+                BackgroundColor="#B97EED"
+                FontSize="Small"
+                VerticalOptions="Fill"
+                Clicked="On2Click"
+                 />
+
+            <Button
+                x:Name="ThreeBtn"
+                Padding="10"
+                Text="3" 
+                TextColor="#542A7A"
+                BackgroundColor="#B97EED"
+                FontSize="Small"
+                VerticalOptions="Fill"
+                Clicked="On3Click"
+                 />
+            
+            <Button
+                x:Name="FourBtn"
+                Padding="10"
+                Text="4" 
+                TextColor="#542A7A"
+                BackgroundColor="#B97EED"
+                FontSize="Small"
+                VerticalOptions="Fill"
+                Clicked="On4Click"
+                 />
+
+            <Button
+                x:Name="FiveBtn"
+                Padding="10"
+                Text="5" 
+                TextColor="#542A7A"
+                BackgroundColor="#B97EED"
+                FontSize="Small"
+                VerticalOptions="Fill"
+                Clicked="On5Click"
+                 />
+            
+            <Button
+                x:Name="EndBtn"
+                Padding="20"
+                Text="End" 
+                TextColor="#225660"
+                BackgroundColor="#7EDCED"
+                FontSize="Medium"
+                VerticalOptions="Fill"
+                Clicked="OnQuestionaireEndClick"
+                 />
+
+            <Button
+                x:Name="BackBtn"
+                Padding="10"
+                Clicked="OnBackClick"
+                HorizontalOptions="Start"
+                TextColor="#285F69"
+                BackgroundColor="#7EDCED"
+                Text="Back" 
+                FontSize="Medium"/>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

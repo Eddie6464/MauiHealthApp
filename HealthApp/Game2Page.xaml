@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HealthApp.Game2Page">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            BackgroundColor="#DDC0F6">
+
+            <Label
+                Text="Game 2"
+                HorizontalOptions="Fill"
+                TextColor="#72538C"
+                BackgroundColor="#C18DEE"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                Text="The purpose of this game is to help you focus on something else rather than the thing causing affecting your immediate mental wellbeing. The game will include pressing the order of the buttons that light"
+                HorizontalOptions="Fill"
+                Padding="25"
+                FontSize="Small"
+                TextColor="#72538C"
+                BackgroundColor="#C18DEE"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Button
+                x:Name="PlayBtn"
+                Padding="40"
+                Text="Play" 
+                TextColor="#257325"
+                BackgroundColor="#8CE48C"
+                FontSize="Medium"
+                Clicked="OnPlayClick"
+                VerticalOptions="Fill"
+                 />
+
+            <Button
+                x:Name="BackBtn"
+                Padding="30"
+                Clicked="OnBackClick"
+                HorizontalOptions="Start"
+                TextColor="#684162"
+                BackgroundColor="#EDB27E"
+                Text="Back" 
+                FontSize="Medium"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

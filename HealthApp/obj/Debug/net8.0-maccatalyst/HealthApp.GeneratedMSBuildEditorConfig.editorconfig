@@ -1,0 +1,295 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-maccatalyst
+build_property.TargetFramework = net8.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = HealthApp
+build_property.ProjectDir = C:\Users\User\Desktop\School\uni\classes\year3\softwaredev\summative\week20\HealthApp\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/ActivitiesAndGamePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.ActivitiesAndGamePage.xaml
+build_metadata.AdditionalFiles.TargetPath = ActivitiesAndGamePage.xaml
+build_metadata.AdditionalFiles.RelativePath = ActivitiesAndGamePage.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/ActivitiesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.ActivitiesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = ActivitiesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = ActivitiesPage.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/Activity1Page.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.Activity1Page.xaml
+build_metadata.AdditionalFiles.TargetPath = Activity1Page.xaml
+build_metadata.AdditionalFiles.RelativePath = Activity1Page.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/Activity2Page.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.Activity2Page.xaml
+build_metadata.AdditionalFiles.TargetPath = Activity2Page.xaml
+build_metadata.AdditionalFiles.RelativePath = Activity2Page.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/Activity3Page.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.Activity3Page.xaml
+build_metadata.AdditionalFiles.TargetPath = Activity3Page.xaml
+build_metadata.AdditionalFiles.RelativePath = Activity3Page.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/Activity4Page.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.Activity4Page.xaml
+build_metadata.AdditionalFiles.TargetPath = Activity4Page.xaml
+build_metadata.AdditionalFiles.RelativePath = Activity4Page.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/BubblesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.BubblesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = BubblesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = BubblesPage.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/ButtonsAndSwitches.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.ButtonsAndSwitches.xaml
+build_metadata.AdditionalFiles.TargetPath = ButtonsAndSwitches.xaml
+build_metadata.AdditionalFiles.RelativePath = ButtonsAndSwitches.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/Game1Page.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.Game1Page.xaml
+build_metadata.AdditionalFiles.TargetPath = Game1Page.xaml
+build_metadata.AdditionalFiles.RelativePath = Game1Page.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/Game2Page.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.Game2Page.xaml
+build_metadata.AdditionalFiles.TargetPath = Game2Page.xaml
+build_metadata.AdditionalFiles.RelativePath = Game2Page.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/Game3Page.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.Game3Page.xaml
+build_metadata.AdditionalFiles.TargetPath = Game3Page.xaml
+build_metadata.AdditionalFiles.RelativePath = Game3Page.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/GamesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.GamesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = GamesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = GamesPage.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/GeneralHelpPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.GeneralHelpPage.xaml
+build_metadata.AdditionalFiles.TargetPath = GeneralHelpPage.xaml
+build_metadata.AdditionalFiles.RelativePath = GeneralHelpPage.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/HomePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.HomePage.xaml
+build_metadata.AdditionalFiles.TargetPath = HomePage.xaml
+build_metadata.AdditionalFiles.RelativePath = HomePage.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/LightUpGamePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.LightUpGamePage.xaml
+build_metadata.AdditionalFiles.TargetPath = LightUpGamePage.xaml
+build_metadata.AdditionalFiles.RelativePath = LightUpGamePage.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/LightUpScores.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.LightUpScores.xaml
+build_metadata.AdditionalFiles.TargetPath = LightUpScores.xaml
+build_metadata.AdditionalFiles.RelativePath = LightUpScores.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = LoginPage.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/MakingPlans.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.MakingPlans.xaml
+build_metadata.AdditionalFiles.TargetPath = MakingPlans.xaml
+build_metadata.AdditionalFiles.RelativePath = MakingPlans.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/MentalHealthGamePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.MentalHealthGamePage.xaml
+build_metadata.AdditionalFiles.TargetPath = MentalHealthGamePage.xaml
+build_metadata.AdditionalFiles.RelativePath = MentalHealthGamePage.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/MentalHealthGameScores.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.MentalHealthGameScores.xaml
+build_metadata.AdditionalFiles.TargetPath = MentalHealthGameScores.xaml
+build_metadata.AdditionalFiles.RelativePath = MentalHealthGameScores.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/OCDPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.OCDPage.xaml
+build_metadata.AdditionalFiles.TargetPath = OCDPage.xaml
+build_metadata.AdditionalFiles.RelativePath = OCDPage.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/PanicPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.PanicPage.xaml
+build_metadata.AdditionalFiles.TargetPath = PanicPage.xaml
+build_metadata.AdditionalFiles.RelativePath = PanicPage.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/PlansEndPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.PlansEndPage.xaml
+build_metadata.AdditionalFiles.TargetPath = PlansEndPage.xaml
+build_metadata.AdditionalFiles.RelativePath = PlansEndPage.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/PlansPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.PlansPage.xaml
+build_metadata.AdditionalFiles.TargetPath = PlansPage.xaml
+build_metadata.AdditionalFiles.RelativePath = PlansPage.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/Question1Page.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.Question1Page.xaml
+build_metadata.AdditionalFiles.TargetPath = Question1Page.xaml
+build_metadata.AdditionalFiles.RelativePath = Question1Page.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/Question2Page.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.Question2Page.xaml
+build_metadata.AdditionalFiles.TargetPath = Question2Page.xaml
+build_metadata.AdditionalFiles.RelativePath = Question2Page.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/Question3Page.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.Question3Page.xaml
+build_metadata.AdditionalFiles.TargetPath = Question3Page.xaml
+build_metadata.AdditionalFiles.RelativePath = Question3Page.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/Question4Page.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.Question4Page.xaml
+build_metadata.AdditionalFiles.TargetPath = Question4Page.xaml
+build_metadata.AdditionalFiles.RelativePath = Question4Page.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/Question5Page.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.Question5Page.xaml
+build_metadata.AdditionalFiles.TargetPath = Question5Page.xaml
+build_metadata.AdditionalFiles.RelativePath = Question5Page.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/Question6Page.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.Question6Page.xaml
+build_metadata.AdditionalFiles.TargetPath = Question6Page.xaml
+build_metadata.AdditionalFiles.RelativePath = Question6Page.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/QuestionaireEndPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.QuestionaireEndPage.xaml
+build_metadata.AdditionalFiles.TargetPath = QuestionaireEndPage.xaml
+build_metadata.AdditionalFiles.RelativePath = QuestionaireEndPage.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/QuestionairePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.QuestionairePage.xaml
+build_metadata.AdditionalFiles.TargetPath = QuestionairePage.xaml
+build_metadata.AdditionalFiles.RelativePath = QuestionairePage.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/ShowPlansPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.ShowPlansPage.xaml
+build_metadata.AdditionalFiles.TargetPath = ShowPlansPage.xaml
+build_metadata.AdditionalFiles.RelativePath = ShowPlansPage.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/ShowQuestionairePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.ShowQuestionairePage.xaml
+build_metadata.AdditionalFiles.TargetPath = ShowQuestionairePage.xaml
+build_metadata.AdditionalFiles.RelativePath = ShowQuestionairePage.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/SpinnerPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.SpinnerPage.xaml
+build_metadata.AdditionalFiles.TargetPath = SpinnerPage.xaml
+build_metadata.AdditionalFiles.RelativePath = SpinnerPage.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/Step1Page.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.Step1Page.xaml
+build_metadata.AdditionalFiles.TargetPath = Step1Page.xaml
+build_metadata.AdditionalFiles.RelativePath = Step1Page.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/Step2Page.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.Step2Page.xaml
+build_metadata.AdditionalFiles.TargetPath = Step2Page.xaml
+build_metadata.AdditionalFiles.RelativePath = Step2Page.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/Step3Page.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.Step3Page.xaml
+build_metadata.AdditionalFiles.TargetPath = Step3Page.xaml
+build_metadata.AdditionalFiles.RelativePath = Step3Page.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/Step4Page.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.Step4Page.xaml
+build_metadata.AdditionalFiles.TargetPath = Step4Page.xaml
+build_metadata.AdditionalFiles.RelativePath = Step4Page.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/StressPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.StressPage.xaml
+build_metadata.AdditionalFiles.TargetPath = StressPage.xaml
+build_metadata.AdditionalFiles.RelativePath = StressPage.xaml

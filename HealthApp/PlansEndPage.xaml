@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HealthApp.PlansEndPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            BackgroundColor="#F5CDAA">
+
+            <Label
+                Text="Making Plans"
+                HorizontalOptions="Fill"
+                TextColor="#8F5C2F"
+                BackgroundColor="#EDB27E"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Button
+                x:Name="AddPlanBtn"
+                Padding="40"
+                Text="Add Plan" 
+                TextColor="#8F5C2F"
+                BackgroundColor="#EDB27E"
+                FontSize="Medium"
+                VerticalOptions="Fill"
+                Clicked="OnAddPlanClick"
+                 />
+
+            <Label
+                x:Name="S1"
+                Text=""
+                FontSize="Small"
+                Padding="25"
+                HorizontalOptions="Fill"
+                TextColor="#8F5C2F"
+                BackgroundColor="#EDB27E"/>
+
+            <Label
+                x:Name="S2"
+                Text=""
+                FontSize="Small"
+                Padding="25"
+                HorizontalOptions="Fill"
+                TextColor="#8F5C2F"
+                BackgroundColor="#EDB27E"/>
+
+            <Label
+                x:Name="S3"
+                Text=""
+                FontSize="Small"
+                Padding="25"
+                HorizontalOptions="Fill"
+                TextColor="#8F5C2F"
+                BackgroundColor="#EDB27E"/>
+
+            <Label
+                x:Name="S4"
+                Text=""
+                FontSize="Small"
+                Padding="25"
+                HorizontalOptions="Fill"
+                TextColor="#8F5C2F"
+                BackgroundColor="#EDB27E"/>
+
+            <Button
+                x:Name="ShowPlansBtn"
+                Padding="40"
+                Text="Show Plans" 
+                TextColor="#7C225B"
+                BackgroundColor="#ED7EC4"
+                FontSize="Medium"
+                VerticalOptions="Fill"
+                Clicked="OnShowPlansClick"
+                 />
+
+            <Button
+                x:Name="MakingPlansBtn"
+                Padding="40"
+                Text="Back to Making Plans" 
+                TextColor="#2B646E"
+                BackgroundColor="#7EDCED"
+                FontSize="Medium"
+                VerticalOptions="Fill"
+                Clicked="OnMakingPlansClick"
+                 />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

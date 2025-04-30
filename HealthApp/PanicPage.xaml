@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HealthApp.PanicPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            BackgroundColor="#AAEAF5">
+
+            <Label
+                Text="Panic"
+                HorizontalOptions="Fill"
+                TextColor="#418592"
+                BackgroundColor="#7EDCED"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                Text="The purpose of this is to give advice and help if you are panicing"
+                HorizontalOptions="Fill"
+                FontSize="Small"
+                Padding="25"
+                TextColor="#418592"
+                BackgroundColor="#7EDCED"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                x:Name="Label1"
+                Text=""
+                FontSize="Small"
+                Padding="25"
+                HorizontalOptions="Fill"
+                TextColor="#418592"
+                BackgroundColor="#FF87DAE9"/>
+
+            <Label
+                x:Name="Label2"
+                Text=""
+                FontSize="Small"
+                Padding="25"
+                HorizontalOptions="Fill"
+                TextColor="#418592"
+                BackgroundColor="#FF87DAE9"/>
+
+            <Label
+                x:Name="Label3"
+                Text=""
+                FontSize="Small"
+                Padding="25"
+                HorizontalOptions="Fill"
+                TextColor="#418592"
+                BackgroundColor="#FF87DAE9"/>
+
+            <Label
+                x:Name="Label4"
+                Text=""
+                FontSize="Small"
+                Padding="25"
+                HorizontalOptions="Fill"
+                TextColor="#418592"
+                BackgroundColor="#FF87DAE9"/>
+
+            <Button
+                x:Name="BackBtn"
+                Padding="30"
+                Clicked="OnBackClick"
+                HorizontalOptions="Start"
+                TextColor="#B26F34"
+                BackgroundColor="#EDA565"
+                Text="Back" 
+                FontSize="Medium"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
