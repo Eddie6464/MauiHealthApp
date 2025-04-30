@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HealthApp.Game3Page">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            BackgroundColor="#CFF4CF">
+
+            <Label
+                Text="Game 3"
+                HorizontalOptions="Fill"
+                TextColor="#338733"
+                BackgroundColor="#8CE48C"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                Text="This is a game of snake where you must direct the snake to eat the apples, each time you consume an apple you will get a mental health tip."
+                HorizontalOptions="Fill"
+                Padding="25"
+                FontSize="Small"
+                TextColor="#338733"
+                BackgroundColor="#8CE48C"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Button
+                x:Name="PlayBtn"
+                Padding="40"
+                Text="Play" 
+                TextColor="#317683"
+                BackgroundColor="#7EDCED"
+                FontSize="Medium"
+                VerticalOptions="Fill"
+                Clicked="OnPlayClick"
+                 />
+
+            <Button
+                x:Name="BackBtn"
+                Padding="30"
+                Clicked="OnBackClick"
+                HorizontalOptions="Start"
+                TextColor="#684162"
+                BackgroundColor="#EDB27E"
+                Text="Back" 
+                FontSize="Medium"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

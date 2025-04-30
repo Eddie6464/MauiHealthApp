@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HealthApp.LightUpGamePage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            BackgroundColor="#CFF4CF">
+
+            <Label
+                Text="Light Up Game"
+                HorizontalOptions="Fill"
+                TextColor="#1F711F"
+                BackgroundColor="#8CE48C"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+            
+            <Label x:Name="HighScore" 
+               Text="High Score: " 
+               HorizontalOptions="Start" 
+               VerticalOptions="Start" />
+
+            <Grid HeightRequest="350" WidthRequest="350" HorizontalOptions="Center">
+                <Button x:Name="RedBtn" BackgroundColor="Red" Clicked="OnClick" Grid.Row="0" Grid.Column="0" />
+                <Button x:Name="GreenBtn" BackgroundColor="Green" Clicked="OnClick" Grid.Row="0" Grid.Column="1" />
+                <Button x:Name="BlueBtn" BackgroundColor="Blue" Clicked="OnClick" Grid.Row="1" Grid.Column="0" />
+                <Button x:Name="YellowBtn" BackgroundColor="Yellow" Clicked="OnClick" Grid.Row="1" Grid.Column="1" />
+
+                <Grid.RowDefinitions>
+                     <RowDefinition Height="*" />
+                     <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+            
+                <Grid.ColumnDefinitions>
+                     <ColumnDefinition Width="*" />
+                     <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+            </Grid>
+            
+            <Grid HeightRequest="100" WidthRequest="1300" HorizontalOptions="Center">
+
+                <Button
+                    Grid.Row="0" 
+                    Grid.Column="0" 
+                    x:Name="StartBtn"
+                    Padding="20"
+                    Clicked="OnStartClick"
+                    HorizontalOptions="Fill"
+                    TextColor="#1F711F"
+                    BackgroundColor="#8CE48C"
+                    Text="Start" 
+                    FontSize="Medium"/>
+
+                <Button
+                    Grid.Row="0" 
+                    Grid.Column="1" 
+                    x:Name="ScoresBtn"
+                    Padding="20"
+                    Clicked="OnScoresClick"
+                    HorizontalOptions="Fill"
+                    TextColor="#663A1C"
+                    BackgroundColor="#EAB28C"
+                    Text="Scores"
+                    FontSize="Medium"/>
+
+
+                <Grid.RowDefinitions>
+                     <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+            
+                <Grid.ColumnDefinitions>
+                     <ColumnDefinition Width="*" />
+                     <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+            </Grid>
+
+            <Button
+                x:Name="BackBtn"
+                Padding="20"
+                Clicked="OnBackClick"
+                HorizontalOptions="Start"
+                TextColor="#431A66"
+                BackgroundColor="#B97EED"
+                Text="Back" 
+                FontSize="Medium"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
