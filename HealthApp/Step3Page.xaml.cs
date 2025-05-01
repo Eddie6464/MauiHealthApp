@@ -8,6 +8,7 @@ public partial class Step3Page : ContentPage
 	{
 		InitializeComponent();
 	    NavigationPage.SetHasNavigationBar(this, false);
+		//gets username and list from previuos page
 		steplist3 = steplist;
 		username8 = username;
 	}

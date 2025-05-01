@@ -17,10 +17,12 @@ public partial class Question6Page : ContentPage
 	    NavigationPage.SetHasNavigationBar(this, false);
 		_viewModel = App.ViewModel;
         BindingContext = _viewModel;
+		//gets username and list from previous page
 		list6=list;
 		username11=username;
 	}
 
+    //resets button colours
 	private void OnBackClick(object sender, EventArgs e)
 	{
 		OneBtn.BackgroundColor = Colors.MediumPurple;
@@ -31,6 +33,7 @@ public partial class Question6Page : ContentPage
 		Navigation.PopAsync();
 	}
 
+    //when user goes to next page button colours reset, and choice is added to the list
 	private async void OnQuestionaireEndClick(object sender, EventArgs e)
 	{   
 		if (OneBtn.BackgroundColor == Colors.DarkOrchid){
@@ -54,11 +57,13 @@ public partial class Question6Page : ContentPage
 		FourBtn.BackgroundColor = Colors.MediumPurple;
 		FiveBtn.BackgroundColor = Colors.MediumPurple;
 
+        //Database
 		//await _viewModel.AddQuestions(await _viewModel.FetchUserId(username11), list6[0], list6[1], list6[2], list6[3], list6[4], list6[0]);
 
 		Navigation.PushAsync(new QuestionaireEndPage(list6, username11));
 	    }
 
+    //changes button colour when a button is clicked
 	private void On1Click(object sender, EventArgs e)
 	{
 		OneBtn.BackgroundColor = Colors.DarkOrchid;

@@ -10,6 +10,7 @@ public partial class Step4Page : ContentPage
 	{
 		InitializeComponent();
 	    NavigationPage.SetHasNavigationBar(this, false);
+		//gets username and list from previous page
 		steplist4 = steplist;
 		username9 = username;
 	}

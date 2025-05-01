@@ -8,18 +8,19 @@ public partial class HomePage : ContentPage
 	{
 		InitializeComponent();
 		NavigationPage.SetHasNavigationBar(this, false);
+		//gets the username from the previous page
 		username2=username;
 
 	}
 
 	private void OnGeneralWellbeingClick(object sender, EventArgs e)
 	{
-		Navigation.PushAsync(new MainPage(username2));
+		Navigation.PushAsync(new HomePage(username2));
 	}
 
 	private void OnImmediateWellbeingClick(object sender, EventArgs e)
 	{
-		Navigation.PushAsync(new HomePage(username2));
+		Navigation.PushAsync(new MainPage(username2));
 	}
 
 	private void OnNutritionClick(object sender, EventArgs e)

@@ -8,6 +8,7 @@ public partial class GamesPage : ContentPage
 	{
 		InitializeComponent();
 		NavigationPage.SetHasNavigationBar(this, false);
+		//username passed from previous page
 		username5 = username;
 	}
 

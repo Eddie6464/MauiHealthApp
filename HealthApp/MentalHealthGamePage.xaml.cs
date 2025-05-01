@@ -87,7 +87,9 @@ public partial class MentalHealthGamePage : ContentPage
 
         private void MoveSnake()
         {
-
+             //snake is moved in direction of the key pressed
+             // if there is food in the space it has moved to a tip will be shown and score will be updated
+             // if there is snake in the space it has moved to the game will end
              Point head=Snake[0];
              Point newHead=head;
 

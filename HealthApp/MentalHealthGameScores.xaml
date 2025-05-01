@@ -49,6 +49,7 @@
                  />
 
             <Label
+                x:Name="label"
                 Text=""
                 HorizontalOptions="Fill" />
 

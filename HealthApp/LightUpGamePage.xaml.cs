@@ -14,6 +14,7 @@ public partial class LightUpGamePage : ContentPage
         NavigationPage.SetHasNavigationBar(this, false);
         _viewModel = App.ViewModel;
         BindingContext = _viewModel;
+        //gets username from previous page
         username8 = username;
     }
 
@@ -37,6 +38,7 @@ public partial class LightUpGamePage : ContentPage
 
     private async Task NextRound()
     {
+        //gets a random colour to flash for the user to remember
         Random random = new Random();
         int randomNumber = random.Next(1, 5);
         string randomColor = "Empty";
@@ -68,7 +70,9 @@ public partial class LightUpGamePage : ContentPage
     private async void OnClick(object sender, EventArgs e)
     {
         if (!isPlayerTurn) return; 
-
+        
+        //when a player clicks a button, it is checked if it is the correct colour, if it is correct the score
+        //is updated
         Button clickedButton = (Button)sender;
         string clickedColor = GetColorFromButton(clickedButton); 
         if (clickedColor == colors[playerIndex]){
@@ -78,11 +82,13 @@ public partial class LightUpGamePage : ContentPage
                 await NextRound();
             }
         }
-
+        
+        //if not correct, the game is over, and the game is reset
         else{
             await DisplayAlert("Game Over","Game Over","Try Again");
             string HighScoreString = playerIndex.ToString();
             HighScore.Text = "High Score: "+HighScoreString;
+            //Database
             //await _viewModel.AddLightUpGameScore(await _viewModel.FetchUserId(username8), playerIndex, DateTime.Today);
             colors.Clear(); 
             playerIndex = 0;

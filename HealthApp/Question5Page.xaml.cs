@@ -11,10 +11,12 @@ public partial class Question5Page : ContentPage
 	{
 		InitializeComponent();
 	    NavigationPage.SetHasNavigationBar(this, false);
+		//gets username and list from previous page
         list5 = list;
 		username10=username;
 	}
 
+    //resets button colours
 	private void OnBackClick(object sender, EventArgs e)
 	{
 		OneBtn.BackgroundColor = Colors.MediumPurple;
@@ -25,6 +27,7 @@ public partial class Question5Page : ContentPage
 		Navigation.PopAsync();
 	}
 
+    //when user goes to next page button colours reset, and choice is added to the list
 	private void OnQuestion6Click(object sender, EventArgs e)
 	{   
 		if (OneBtn.BackgroundColor == Colors.DarkOrchid){
@@ -50,6 +53,7 @@ public partial class Question5Page : ContentPage
 		Navigation.PushAsync(new Question6Page(list5, username10));
 	}
 
+    //changes button colours when button is clicked
 	private void On1Click(object sender, EventArgs e)
 	{
 		OneBtn.BackgroundColor = Colors.DarkOrchid;

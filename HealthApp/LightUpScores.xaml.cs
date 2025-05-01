@@ -17,20 +17,21 @@ public partial class LightUpScores : ContentPage
 
 	private async void OnEnterClick(object sender, EventArgs e)
 	{
-		string inputDate1 = Entry1.Text;  // First date input
-        string inputDate2 = Entry2.Text;  // Second date input
+		string inputDate1 = Entry1.Text;  
+        string inputDate2 = Entry2.Text;  
 
         DateTime parsedDate1, parsedDate2;
 
         bool isValidDate1 = DateTime.TryParse(inputDate1, out parsedDate1);
         bool isValidDate2 = DateTime.TryParse(inputDate2, out parsedDate2);
 
+        // If both dates are valid
         if (isValidDate1 && isValidDate2){
-           // If both dates are valid
-           //await _viewModel.GetLightUpGameScores(username10, parsedDate1, parsedDate2);
+		   //Database
+           //label.Text=await _viewModel.GetLightUpGameScores(username10, parsedDate1, parsedDate2);
+           label.Text="database unavailable";
         }
         else{
-           // If any of the dates are invalid
            await DisplayAlert("Invalid Date", "Please enter valid dates in both fields.", "OK");
         }
 	}

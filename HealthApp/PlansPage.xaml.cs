@@ -7,6 +7,7 @@ public partial class PlansPage : ContentPage
 	{
 		InitializeComponent();
 	    NavigationPage.SetHasNavigationBar(this, false);
+		//gets username from previous page
 		username5 = username;
 	}
 

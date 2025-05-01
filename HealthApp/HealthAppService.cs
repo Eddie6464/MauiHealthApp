@@ -9,6 +9,7 @@ public class HealthAppService
 
     public HealthAppService(AppDbContext dbContext)
     {
+        //connects database
         _dbContext = dbContext;
     }
 
@@ -16,7 +17,7 @@ public class HealthAppService
     {
     return await _dbContext.DBUsers
         .Where(u => u.Username == username)
-        .Select(u => (int?)u.Id) // Use nullable int to handle cases where the user is not found
+        .Select(u => (int?)u.Id)                              
         .FirstOrDefaultAsync();
     }
 
@@ -32,11 +33,10 @@ public class HealthAppService
 
     public async Task<bool> CreateNewUser(string username, string password)
 {
-    // Check if the username is already taken
     bool userExists = await _dbContext.DBUsers.AnyAsync(u => u.Username == username);
     if (userExists)
     {
-        return false; // Username already exists
+        return false; 
     }
 
     var newUser = new DBUser

@@ -8,6 +8,7 @@ public partial class Game2Page : ContentPage
 	{
 		InitializeComponent();
 		NavigationPage.SetHasNavigationBar(this, false);
+		//username is passed from previuos page
 		username6 = username;
 	}
 

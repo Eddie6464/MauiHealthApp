@@ -6,6 +6,7 @@ public partial class Activity1Page : ContentPage
 	{
 		InitializeComponent();
 		NavigationPage.SetHasNavigationBar(this, false);
+		//labels set to show user the activity steps
 		string Text1 = "Step 1: Look at 5 seperate objects and think about them for a while";
 		string Text2 = "Step 2: Listen to 4 sounds and consider where they can from";
 		string Text3 = "Step 3: Touch 3 objects and consider the temperature and texture";

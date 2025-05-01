@@ -16,6 +16,8 @@ public partial class BubblesPage : ContentPage
 
 	private void OnBubbleClick(object sender, EventArgs e)
         {
+            //when a button is clicked if it is green it is changed to light green, and if it is
+            //light green it is changed to green
             if (sender is Button button)
             {
                 if (button.BackgroundColor == Colors.Green)

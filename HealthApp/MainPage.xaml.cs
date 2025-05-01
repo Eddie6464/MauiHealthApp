@@ -8,6 +8,7 @@ public partial class MainPage : ContentPage
 	{
 		InitializeComponent();
 		NavigationPage.SetHasNavigationBar(this, false);
+		//gets username from previuos page
 		username3=username;
 	}
 

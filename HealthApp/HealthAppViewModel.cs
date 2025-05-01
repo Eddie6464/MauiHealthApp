@@ -8,8 +8,10 @@ namespace HealthApp;
 
 public class HealthAppViewModel : INotifyPropertyChanged
 {
+    //connects to healthappservice
     private readonly HealthAppService _service;
 
+    //ensures each table is created and updated when it is changed
     private DBUser? _DBuser;
     public DBUser? DBUser{
         get => _DBuser;

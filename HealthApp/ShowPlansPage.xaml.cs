@@ -10,6 +10,7 @@ public partial class ShowPlansPage : ContentPage
 	{
 		InitializeComponent();
 	    NavigationPage.SetHasNavigationBar(this, false);
+		//gets username from previous page
 		username5 = username;
 	}
 
@@ -18,10 +19,12 @@ public partial class ShowPlansPage : ContentPage
 		string inputText = Entry.Text;
 
         if (int.TryParse(inputText, out int Entrynumber)){
+		   //Database
            //Step1.Text = await _viewModel.GetStep1(username5, Entrynumber);
 		   //Step2.Text = await _viewModel.GetStep2(username5, Entrynumber);
 		   //Step3.Text = await _viewModel.GetStep3(username5, Entrynumber);
 		   //Step4.Text = await _viewModel.GetStep4(username5, Entrynumber);
+		   Step1.Text = "database unavailable";
         }
         else{
            await DisplayAlert("Invalid Input", "Please enter a valid number.", "OK");

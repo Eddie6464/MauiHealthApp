@@ -7,6 +7,7 @@ public partial class Activity4Page : ContentPage
 	{
 		InitializeComponent();
 		NavigationPage.SetHasNavigationBar(this, false);
+		//labels set to show user the activity steps
 		string Text1 = "Step 1: Setting at least 20 minutes aside";
 		string Text2 = "Step 2: Find a comfortable place such as a chair or bed";
 		string Text3 = "Step 3: Close your eyes and focus on your senses";

@@ -8,6 +8,7 @@ public partial class QuestionairePage : ContentPage
 	{
 		InitializeComponent();
 	    NavigationPage.SetHasNavigationBar(this, false);
+		//gets username from previous page
 		username5 = username;
 	}
 

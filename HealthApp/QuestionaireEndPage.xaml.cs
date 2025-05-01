@@ -13,13 +13,14 @@ public partial class QuestionaireEndPage : ContentPage
 	    NavigationPage.SetHasNavigationBar(this, false);
 		_viewModel = App.ViewModel;
         BindingContext = _viewModel;
+		//gets username and list from previous page
 		list7=list;
 		username12=username;
 	}
 
 	private async void OnQuestionaireEndClick (object sender, EventArgs e)
 	{   
-		
+		//Database
 		// if(await _viewModel.GetQuestion1(username12, await _viewModel.GetQuestionaireId())>3){
 		// 	String text1 = "Include methods to reduce stress in plan";
 		//  Q1.Text = text1;
@@ -68,6 +69,8 @@ public partial class QuestionaireEndPage : ContentPage
 		// 	String text12 = "Could include methods to get out in nature more in plan";
 		//  Q6.Text = text12;
 		// }
+
+		//Questionaire results are shown to user
 		if(list7[0]>3){
 			String text1 = "Include methods to reduce stress in plan";
 		 Q1.Text = text1;

@@ -8,6 +8,7 @@ public partial class StressPage : ContentPage
 	{
 		InitializeComponent();
 		NavigationPage.SetHasNavigationBar(this, false);
+		//labels set to reccomedations to manage OCD
 		string Text1 = "Try listening to music, as this can relax you";
 		string Text2 = "Give yourself a hand message, by keanding the base of the muscle under your thumb, as this can help reduce your heart rate and reduce stress";
 		string Text3 = "Eat some chocolate - One square of dark chocolate can help calm your nerves, as it regualtes the stress hormone corisol";

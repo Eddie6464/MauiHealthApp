@@ -27,38 +27,35 @@ public partial class SpinnerPage : ContentPage
 
     private async void StartCanvasRotationRight()
         {
-            // Rotation animation for the canvas (spin 360 degrees)
+            //rotation animation for spinner
             var rotationAnimation = new Animation(v => Canvas.Rotation = v, 0, 3000);
 
             rotationAnimation.Easing = new Easing(t => 1 - Math.Pow(1 - t, 5));
 
-            // Loop the animation infinitely
+            // loop the animation
             rotationAnimation.Commit(this, "SpinAnimation", length: 4000, repeat: () => false);
-
-            // You can adjust the '2000' (time in milliseconds) to control the speed of the rotation.
         }
 
     private async void StartCanvasRotationLeft()
         {
-            // Rotation animation for the canvas (spin 360 degrees)
+            //rotation animation for spinner
             var rotationAnimation = new Animation(v => Canvas.Rotation = v, 0, -3000);
 
             rotationAnimation.Easing = new Easing(t => 1 - Math.Pow(1 - t, 5));
 
-            // Loop the animation infinitely
+            //loop the animation
             rotationAnimation.Commit(this, "SpinAnimation", length: 4000, repeat: () => false);
-
-            // You can adjust the '2000' (time in milliseconds) to control the speed of the rotation.
         }
 
 }
 
 public class MyFirstDrawing : IDrawable
 {
+    //drawing the shape of the spinner
     public void Draw(ICanvas canvas, RectF dirtyRect)
     {
         PathF path = new PathF();
-        path.MoveTo(654, 20); // Starting point
+        path.MoveTo(654, 20); // starting point
         path.LineTo(598, 204);
         path.LineTo(499, 291);
         path.LineTo(427, 249);

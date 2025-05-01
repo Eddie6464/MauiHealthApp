@@ -8,6 +8,7 @@ public partial class PanicPage : ContentPage
 	{
 		InitializeComponent();
 		NavigationPage.SetHasNavigationBar(this, false);
+		//labels set to reccomedations to manage OCD
 		string Text1 = "Focus on what is going on around you and try to; \nListen to music \nCount the objects around you \nSomething you enjoy such as reading or watching television";
 		string Text2 = "Some panic attacks come from being overwhelmed, so try closing you eyes or covering your ears";
 		string Text3 = "Pick an object to focus all your attention on and try to describe the patterns, colour, shape, and size of the object";

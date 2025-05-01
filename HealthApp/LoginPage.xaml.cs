@@ -22,7 +22,8 @@ public partial class LoginPage : ContentPage
 		else if (string.IsNullOrEmpty(Password.Text)){
 			await DisplayAlert("Password Empty","Please Enter a Password","Okay");
 		}
-
+        
+		//Database
 		//else if (!await _viewModel.CheckIfUsernameExists(Username.Text)){
 		//	await DisplayAlert("Username Not in Database","Please Enter a valid Username","Okay");
 		//}
