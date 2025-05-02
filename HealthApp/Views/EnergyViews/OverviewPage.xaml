@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EnergyHealthApp.Views.OverviewPage"
+             BackgroundColor="{StaticResource BackgroundColor}"
+             NavigationPage.HasNavigationBar="False">
+             <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="90"/> <!-- Top bar -->
+                    <RowDefinition Height="*"/> <!-- Main content -->
+                </Grid.RowDefinitions>
+
+                <!-- Top Bar -->
+                <BoxView Grid.Row="0" 
+                    Grid.ColumnSpan="2" 
+                    Style="{StaticResource TopBar}"/>
+
+                <!-- Overview Label -->
+                <Label
+                    Grid.Row="0" 
+                    Text="Overview"
+                    Style="{StaticResource TopLabel}"
+                    HorizontalOptions="Center"/>
+
+                <!-- Home Button -->
+                <Button
+                    Grid.ColumnSpan="1"
+                    Style="{StaticResource HomeButton}"
+                    Clicked="HomeButtonClicked"/>
+
+                <!-- Content -->
+                <StackLayout Grid.Row="1">
+                    <Label Text="Welcome to the Energy and Fitness Feature!" Style="{StaticResource OverviewLabel}"/>
+                    <Label Text="Check out the Energy Profile to enter your heart rate and other information and see score for your health." Style="{StaticResource OverviewLabel}"/>
+                    <Label Text="Check out the Questionnaire to answer questions about your lifestyle and view recommendations on how you can improve your lifestyle to benefit your health." Style="{StaticResource OverviewLabel}"/>
+                    <Label Text="Check out the Glossary to see defintions for confusing terminology." Style="{StaticResource OverviewLabel}"/>
+                </StackLayout>
+            </Grid>
+
+</ContentPage>

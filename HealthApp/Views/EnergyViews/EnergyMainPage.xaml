@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EnergyHealthApp.Views.EnergyMainPage"
+             BackgroundColor="{StaticResource BackgroundColor}"
+             NavigationPage.HasNavigationBar="False">
+                <Grid>
+                    <Grid.RowDefinitions> 
+                        <RowDefinition Height="90"/>
+                        <RowDefinition Height="60"/>
+                        <RowDefinition Height="175"/>
+                        <RowDefinition Height="90"/>
+                        <RowDefinition Height="175"/>
+                        <RowDefinition Height="60"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition Width="225"/>                    
+                        <ColumnDefinition Width="400"/>
+                        <ColumnDefinition Width="225"/>
+                        <ColumnDefinition Width="200"/>
+                    </Grid.ColumnDefinitions>
+                    <BoxView Style="{StaticResource TopBar}"
+                        WidthRequest="1500"
+                        Grid.ColumnSpan="6"/>
+                    <Label 
+                        Text="Energy - Home"
+                        Style="{StaticResource TopLabel}"
+                        Grid.Column="2"/>
+                    <Button
+                        Text="Overview"
+                        Grid.Row="2"
+                        Grid.Column="1"
+                        BackgroundColor="#BBFBBB"
+                        TextColor="Black"
+                        Clicked="OverviewButtonClicked"/>
+                    <Button
+                        Text="Questionnaire"
+                        Grid.Row="2"
+                        Grid.Column="3"
+                        BackgroundColor="#E27C7C"
+                        TextColor="Black"
+                        Clicked="QuestionnaireButtonClicked"/>
+                    <Button
+                        Text="Steps Tracker"
+                        Grid.Row="2"
+                        Grid.Column="2"
+                        WidthRequest="225"
+                        HeightRequest="175"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        BackgroundColor="Yellow"
+                        TextColor="Black"
+                        Clicked="StepsTrackerButtonClicked"/>
+                    <Button
+                        Text="Glossary"
+                        Grid.Row="4"
+                        Grid.Column="1"
+                        BackgroundColor="#F3DF8C"
+                        TextColor="Black"
+                        Clicked="GlossaryButtonClicked"/>
+                    <Button
+                        Text="Energy Profile"
+                        Grid.Row="4"
+                        Grid.Column="3"
+                        BackgroundColor="#E373D8"
+                        TextColor="Black"
+                        Clicked="EnergyProfileButtonClicked"/>
+                </Grid>
+</ContentPage>

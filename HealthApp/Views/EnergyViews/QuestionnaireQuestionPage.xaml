@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EnergyHealthApp.Views.QuestionnaireQuestionPage"
+             BackgroundColor="{StaticResource BackgroundColor}"
+             NavigationPage.HasNavigationBar="False">
+                <Grid>
+                    <Grid.RowDefinitions> 
+                        <RowDefinition Height="90"/>
+                        <RowDefinition Height="60"/>
+                        <RowDefinition Height="120"/>
+                        <RowDefinition Height="60"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="210"/>
+                        <ColumnDefinition Width="120"/>                    
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="120"/>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="120"/>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="120"/>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="120"/>
+                        <ColumnDefinition Width="120"/>
+                    </Grid.ColumnDefinitions>
+                    <BoxView Style="{StaticResource TopBar}"
+                        WidthRequest="4000"/>
+                    <Label 
+                        Text="Energy - Home"
+                        Style="{StaticResource TopLabel}"
+                        Grid.Column="4"
+                        Grid.ColumnSpan="3"/>
+                    <Label
+                        x:Name ="questionLabel"
+                        Text="Question 1: On a scale of 1 to 10, how often do you excersize?"
+                        FontSize="20"
+                        Grid.Column="1"
+                        Grid.Row="2"
+                        Grid.ColumnSpan="9"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"/>
+                    <Button
+                        Text="1"
+                        Grid.Row="3"
+                        Grid.Column="1"
+                        Style="{StaticResource QuestionNumberButton}"
+                        Clicked="QuestionAnswerButtonClicked"/>
+                    <Button
+                        Text="2"
+                        Grid.Row="3"
+                        Grid.Column="3"
+                        Style ="{StaticResource QuestionNumberButton}"
+                        Clicked="QuestionAnswerButtonClicked"/>
+                    <Button
+                        Text="3"
+                        Grid.Row="3"
+                        Grid.Column="5"
+                        Style ="{StaticResource QuestionNumberButton}"
+                        Clicked="QuestionAnswerButtonClicked"/>
+                    <Button
+                        Text="4"
+                        Grid.Row="3"
+                        Grid.Column="7"
+                        Style ="{StaticResource QuestionNumberButton}"
+                        Clicked="QuestionAnswerButtonClicked"/>
+                    <Button
+                        Text="5"
+                        Grid.Row="3"
+                        Grid.Column="9"
+                        Style ="{StaticResource QuestionNumberButton}"
+                        Clicked="QuestionAnswerButtonClicked"/>
+                </Grid>
+</ContentPage>

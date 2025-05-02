@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EnergyHealthApp.Views.EnergyProfileEntryPage"
+             BackgroundColor="{StaticResource BackgroundColor}"
+             NavigationPage.HasNavigationBar="False">
+             <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="90"/>
+                    <RowDefinition Height ="90"/>
+                    <RowDefinition Height ="90"/>
+                    <RowDefinition Height="250"/>
+                    <RowDefinition Height="90"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="180"/>
+                    <ColumnDefinition Width="920"/>
+                    <ColumnDefinition Width="180"/>
+                </Grid.ColumnDefinitions>
+                <BoxView Style="{StaticResource TopBar}"
+                    Grid.ColumnSpan="3"/>
+                <Label 
+                    Text="Energy Profile"
+                    Style="{StaticResource TopLabel}"
+                    Grid.Column="1"/>
+                <Button
+                    Grid.ColumnSpan="3"
+                    Style="{StaticResource HomeButton}"
+                    Clicked="HomeButtonClicked"/>
+                <Label
+                    x:Name="questionText"
+                    Text="What is your heart rate?"
+                    FontSize="30"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"/>
+                <Entry 
+                    x:Name="dataEntry"
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    WidthRequest="400"
+                    BackgroundColor="White"
+                    TextColor="Black"/>
+                <Label
+                    x:Name="errorLabel"
+                    Text="Error - Please enter a valid input value!"
+                    FontSize="20"
+                    TextColor="Red"
+                    Grid.Row="3"
+                    Grid.Column="1"
+                    HorizontalOptions="Center"
+                    IsVisible="False"/>
+                <Button 
+                    Text="Confirm"
+                    Grid.Row="4"
+                    Grid.Column="0"
+                    HorizontalOptions="Center"
+                    WidthRequest ="150"
+                    Clicked="ConfirmButtonClicked"/>
+                <Button
+                    Text="Skip"
+                    Grid.Row="4"
+                    Grid.Column="2"
+                    HorizontalOptions="Center"
+                    WidthRequest="150"
+                    Clicked="SkipButtonClicked"/>
+             </Grid>
+</ContentPage>

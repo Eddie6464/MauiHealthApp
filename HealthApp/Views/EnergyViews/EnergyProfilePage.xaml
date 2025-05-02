@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EnergyHealthApp.Views.EnergyProfilePage"
+             BackgroundColor="{StaticResource BackgroundColor}"
+             NavigationPage.HasNavigationBar="False">
+             <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="90"/>
+                    <RowDefinition Height="500"/>
+                </Grid.RowDefinitions>
+                <BoxView 
+                    Style="{StaticResource TopBar}"/>
+                <Label
+                    Text="Energy Profile"
+                    Style="{StaticResource TopLabel}"/>
+                <Button
+                    Grid.ColumnSpan="3"
+                    Style="{StaticResource HomeButton}"
+                    Clicked="HomeButtonClicked"/>
+                <StackLayout
+                    Grid.Row="1"
+                    HorizontalOptions="Center"
+                    Orientation="Vertical">
+                    <Label 
+                        x:Name="userNameLabel" 
+                        Text="{Binding User.Username}" 
+                        Style="{StaticResource EnergyProfileLabel}"/>
+                    <Label 
+                        x:Name="heartRateLabel" 
+                        Text="{Binding EnergyProfile.HeartRate, StringFormat='Heart Rate: {0}bpm (beats per minute)'}" 
+                        Style="{StaticResource EnergyProfileLabel}"/>
+                    <Label 
+                        x:Name="bloodPressureLabel" 
+                        Text="{Binding EnergyProfile.BloodPressure, StringFormat='Blood Pressure: {0}mmHg'}" 
+                        Style="{StaticResource EnergyProfileLabel}"/>
+                    <Label 
+                        x:Name="respiratoryRateLabel" 
+                        Text="{Binding EnergyProfile.RespiratoryRate, StringFormat='Respiratory Rate: {0}bpm (breaths per minute)'}" 
+                        Style="{StaticResource EnergyProfileLabel}"/>
+                    <Label 
+                        x:Name ="score_label"
+                        Text="{Binding EnergyProfile.Score, StringFormat='Overall: {0}'}" 
+                        Style="{StaticResource EnergyProfileLabel}"/>
+                    <Button
+                        Text="Update"
+                        BackgroundColor="#E27C7C"
+                        TextColor="Black"
+                        WidthRequest="100"
+                        HeightRequest="50"
+                        HorizontalOptions="Center"
+                        Clicked="UpdateButtonClicked"/>  
+                </StackLayout>
+             </Grid>
+             
+
+</ContentPage>
