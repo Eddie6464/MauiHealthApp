@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Nutrition.Views.CalorieCounter"
+             Title="Calorie Counter"
+             x:Name="CalorieCounterPage">
+            
+
+    
+   
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="30">
+
+            <Frame CornerRadius="25" Padding="0" BackgroundColor="LightGray"
+                HorizontalOptions="Center" WidthRequest="550">
+                    <HorizontalStackLayout>
+                        
+                        
+                        
+                        <!-- Search Bar -->
+                        <SearchBar x:Name="FoodSearchBar"
+                            BackgroundColor="LightGray"
+                            Placeholder="Food and Exercise......."
+                            TextChanged="OnSearchTextChanged"
+                            FontSize="16"
+                            HeightRequest="50"
+                            AutomationId="FoodSearchBar"/>
+                    </HorizontalStackLayout>
+            </Frame>
+
+            <!-- Search item -->
+            <CollectionView ItemsSource="{Binding FilteredFoods}" IsVisible="{Binding IsListVisible}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="10">
+                            <Label Text="{Binding Name}" FontSize="18"/>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            
+
+        <Label Text="Kcal" HorizontalTextAlignment="End" FontSize="24" Margin="0,0,100,0"/>
+
+
+           
+            <Frame
+                HeightRequest="60"
+                WidthRequest="650"
+                BackgroundColor="#D9D9D9"
+                CornerRadius="25"
+                VerticalOptions="CenterAndExpand">
+                
+                <Grid ColumnDefinitions="Auto, 2*,Auto">
+                   
+                    <Button Grid.Column="0"
+                            ImageSource="plus_icon.png"
+                            Clicked="BreakfastItem"
+                            Background="#D9D9D9"
+                            WidthRequest="50"
+                            HeightRequest="40"
+                            VerticalOptions="Center"
+                            Margin="10,0,5,0"/>
+                    
+                    <!-- Breakfast Label  -->
+                    <Label Grid.Column="1"
+                        Text="Breakfast"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Start"
+                        Margin="5,0,0,0"/>  <!-- Reduced margin to bring it closer -->
+
+                    <!-- Calories count -->
+                    <Label Grid.Column="2"
+                        Text="{Binding BreakfastCalories}"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        VerticalOptions="Center"
+                        HorizontalOptions="End"
+                        Margin="0,0,60,0"/>
+                </Grid>
+
+            </Frame>
+
+
+            <!-- breakfast food -->
+            <VerticalStackLayout Padding="20" Spacing="20">
+                        <CollectionView ItemsSource="{Binding Foods}">
+                            <CollectionView.ItemTemplate Spacing="20" padding="20">
+                                <DataTemplate>
+                                    <Grid ColumnDefinitions="*, Auto, Auto, Auto" Padding="10" RowSpacing="20" ColumnSpacing="20">
+                                        <!-- Food Name on the Left -->
+                                        <Label Text="{Binding Name}" 
+                                            FontSize="20"
+                                            VerticalOptions="Center"
+                                            Grid.Column="0"
+                                            Margin="30,0,0,0"/>
+
+                                        <!-- Calories amount -->
+                                        <Label Text="{Binding Calories}" 
+                                            FontSize="20"
+                                            VerticalOptions="Center"
+                                            HorizontalOptions="End"
+                                            Grid.Column="1"/>
+
+                                     
+
+                                        <!-- Delete Button on the Right -->
+                                        <Button Text="❌"
+                                                BackgroundColor="Red"
+                                                WidthRequest="30"
+                                                HeightRequest="30"
+                                                TextColor="White"
+                                                Command="{Binding BindingContext.DeleteCommand, Source={x:Reference CalorieCounterPage}}"
+                                                CommandParameter="{Binding .}"
+                                                VerticalOptions="Center"
+                                                HorizontalOptions="End"
+                                                Grid.Column="3"/>
+                                    </Grid>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                       
+            </VerticalStackLayout>
+                   
+
+
+
+            <!-- Lunch bar -->
+            <Frame 
+                HeightRequest="60"
+                WidthRequest="650"
+                BackgroundColor="#D9D9D9"
+                CornerRadius="25"
+                VerticalOptions="CenterAndExpand">
+                <Grid ColumnDefinitions="Auto, 2*,Auto">
+                   
+                    <Button Grid.Column="0"
+                            ImageSource="plus_icon.png"
+                            Clicked="LunchItem"
+                            Background="#D9D9D9"
+                            WidthRequest="50"
+                            HeightRequest="40"
+                            VerticalOptions="Center"
+                            Margin="10,0,5,0"/>
+                    
+                    
+                    <Label Grid.Column="1"
+                        Text="Lunch"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Start"
+                        Margin="5,0,0,0"/>  
+
+                   
+                    <Label Grid.Column="2"
+                        Text="{Binding LunchCalories}"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        VerticalOptions="Center"
+                        HorizontalOptions="End"
+                        Margin="0,0,60,0"/>
+                </Grid>
+
+            </Frame>
+
+
+            <!-- Lunch food -->
+            <VerticalStackLayout Padding="20" Spacing="20">
+                        <CollectionView ItemsSource="{Binding LunchFoodItem}">
+                            <CollectionView.ItemTemplate Spacing="20" padding="20">
+                                <DataTemplate>
+                                    <Grid ColumnDefinitions="*, Auto, Auto, Auto" Padding="10" RowSpacing="20" ColumnSpacing="20">
+                                       
+                                        <Label Text="{Binding Name}" 
+                                            FontSize="20"
+                                            VerticalOptions="Center"
+                                            Grid.Column="0"
+                                            Margin="30,0,0,0"/>
+
+                                       
+                                        <Label Text="{Binding Calories}" 
+                                            FontSize="20"
+                                            VerticalOptions="Center"
+                                            HorizontalOptions="End"
+                                            Grid.Column="1"/>
+
+                                     
+
+                                        
+                                        <Button Text="❌"
+                                                BackgroundColor="Red"
+                                                WidthRequest="30"
+                                                HeightRequest="30"
+                                                TextColor="White"
+                                                 Command="{Binding BindingContext.DeleteCommand, Source={x:Reference CalorieCounterPage}}"
+                                                CommandParameter="{Binding .}"    
+                                                VerticalOptions="Center"
+                                                HorizontalOptions="End"
+                                                Grid.Column="3"/>
+                                    </Grid>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                       
+            </VerticalStackLayout>
+
+
+
+
+
+
+
+
+            <!-- Dinner total bar -->
+            <Frame 
+                HeightRequest="60"
+                WidthRequest="650"
+                BackgroundColor="#D9D9D9"
+                CornerRadius="25"
+                VerticalOptions="CenterAndExpand">
+                <Grid ColumnDefinitions="Auto, 2*,Auto">
+                   
+                    <Button Grid.Column="0"
+                            ImageSource="plus_icon.png"
+                            Clicked="DinnerItem"
+                            Background="#D9D9D9"
+                            WidthRequest="50"
+                            HeightRequest="40"
+                            VerticalOptions="Center"
+                            Margin="10,0,5,0"/>
+                    
+                   
+                    <Label Grid.Column="1"
+                        Text="Dinner"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Start"
+                        Margin="5,0,0,0"/>  
+
+                    
+                    <Label Grid.Column="2"
+                        Text="{Binding DinnerCalories}"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        VerticalOptions="Center"
+                        HorizontalOptions="End"
+                        Margin="0,0,60,0"/>
+                </Grid>
+
+            </Frame>
+
+
+            <!-- Dinner food -->
+            <VerticalStackLayout Padding="20" Spacing="20">
+                        <CollectionView ItemsSource="{Binding DinnerFoodItem}">
+                            <CollectionView.ItemTemplate Spacing="20" padding="20">
+                                <DataTemplate>
+                                    <Grid ColumnDefinitions="*, Auto, Auto, Auto" Padding="10" RowSpacing="20" ColumnSpacing="20">
+                                        
+                                        <Label Text="{Binding Name}" 
+                                            FontSize="20"
+                                            VerticalOptions="Center"
+                                            Grid.Column="0"
+                                            Margin="30,0,0,0"/>
+
+                                       
+                                        <Label Text="{Binding Calories}" 
+                                            FontSize="20"
+                                            VerticalOptions="Center"
+                                            HorizontalOptions="End"
+                                            Grid.Column="1"/>
+
+                                     
+
+                                      
+                                        <Button Text="❌"
+                                                BackgroundColor="Red"
+                                                WidthRequest="30"
+                                                HeightRequest="30"
+                                                TextColor="White"
+                                                Command="{Binding BindingContext.DeleteCommand, Source={x:Reference CalorieCounterPage}}"
+                                                CommandParameter="{Binding .}"    
+                                                VerticalOptions="Center"
+                                                HorizontalOptions="End"
+                                                Grid.Column="3"/>
+                                    </Grid>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                       
+            </VerticalStackLayout>
+            
+
+
+
+            <!-- Snack bar -->
+            <Frame 
+                HeightRequest="60"
+                WidthRequest="650"
+                BackgroundColor="#D9D9D9"
+                CornerRadius="25"
+                VerticalOptions="CenterAndExpand">
+                <Grid ColumnDefinitions="Auto, 2*,Auto">
+                  
+                    <Button Grid.Column="0"
+                            ImageSource="plus_icon.png"
+                            Clicked="SnackItem"
+                            Background="#D9D9D9"
+                            WidthRequest="50"
+                            HeightRequest="40"
+                            VerticalOptions="Center"
+                            Margin="10,0,5,0"/>
+                    
+                   
+                    <Label Grid.Column="1"
+                        Text="Snack"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Start"
+                        Margin="5,0,0,0"/>  
+
+          
+                    <Label Grid.Column="2"
+                        Text="{Binding SnackCalories}"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        VerticalOptions="Center"
+                        HorizontalOptions="End"
+                        Margin="0,0,60,0"/>
+                </Grid>
+
+            </Frame>
+
+
+            <!-- Snack food -->
+            <VerticalStackLayout Padding="20" Spacing="20">
+                        <CollectionView ItemsSource="{Binding SnackFoodItem}">
+                            <CollectionView.ItemTemplate Spacing="20" padding="20">
+                                <DataTemplate>
+                                    <Grid ColumnDefinitions="*, Auto, Auto, Auto" Padding="10" RowSpacing="20" ColumnSpacing="20">
+                                       
+                                        <Label Text="{Binding Name}" 
+                                            FontSize="20"
+                                            VerticalOptions="Center"
+                                            Grid.Column="0"
+                                            Margin="30,0,0,0"/>
+
+                                       
+                                        <Label Text="{Binding Calories}" 
+                                            FontSize="20"
+                                            VerticalOptions="Center"
+                                            HorizontalOptions="End"
+                                            Grid.Column="1"/>
+
+                                     
+
+                                      
+                                        <Button Text="❌"
+                                                BackgroundColor="Red"
+                                                WidthRequest="30"
+                                                HeightRequest="30"
+                                                TextColor="White"
+                                                Command="{Binding BindingContext.DeleteCommand, Source={x:Reference CalorieCounterPage}}"
+                                                CommandParameter="{Binding .}"    
+                                                VerticalOptions="Center"
+                                                HorizontalOptions="End"
+                                                Grid.Column="3"/>
+                                    </Grid>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                       
+            </VerticalStackLayout>
+            
+
+
+
+
+
+
+
+            <!-- Exercise -->
+            <Frame 
+                HeightRequest="60"
+                WidthRequest="650"
+                BackgroundColor="#D9D9D9"
+                CornerRadius="25"
+                VerticalOptions="CenterAndExpand">
+                <Grid ColumnDefinitions="Auto, 2*,Auto">
+                   
+                    <Button Grid.Column="0"
+                            ImageSource="plus_icon.png"
+                            Clicked="ExerciseItem"
+                            Background="#D9D9D9"
+                            WidthRequest="50"
+                            HeightRequest="40"
+                            VerticalOptions="Center"
+                            Margin="10,0,5,0"/>
+                    
+                    
+                    <Label Grid.Column="1"
+                        Text="Exercise"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Start"
+                        Margin="5,0,0,0"/>  
+
+                    <!-- Calories Label (Stay to the right) -->
+                    <Label Grid.Column="2"
+                        Text="{Binding ExerciseCalories}"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        VerticalOptions="Center"
+                        HorizontalOptions="End"
+                        Margin="0,0,60,0"/>
+                </Grid>
+
+            </Frame>
+
+
+            <!-- Exercise food -->
+            <VerticalStackLayout Padding="20" Spacing="20">
+                        <CollectionView ItemsSource="{Binding SportItem}">
+                            <CollectionView.ItemTemplate Spacing="20" padding="20">
+                                <DataTemplate>
+                                    <Grid ColumnDefinitions="*, Auto, Auto, Auto" Padding="10" RowSpacing="20" ColumnSpacing="20">
+                                        <!-- Food Name on the Left -->
+                                        <Label Text="{Binding Name}" 
+                                            FontSize="20"
+                                            VerticalOptions="Center"
+                                            Grid.Column="0"
+                                            Margin="30,0,0,0"/>
+
+                                       
+                                        <Label Text="{Binding Calories}" 
+                                            FontSize="20"
+                                            VerticalOptions="Center"
+                                            HorizontalOptions="End"
+                                            Grid.Column="1"/>
+
+                                     
+
+                                        
+                                        <Button Text="❌"
+                                                BackgroundColor="Red"
+                                                WidthRequest="30"
+                                                HeightRequest="30"
+                                                Command="{Binding BindingContext.DeleteCommand, Source={x:Reference CalorieCounterPage}}"
+                                                CommandParameter="{Binding .}"    
+                                                VerticalOptions="Center"
+                                                HorizontalOptions="End"
+                                                Grid.Column="3"/>
+                                    </Grid>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                       
+            </VerticalStackLayout>
+            <!-- Bottom section -->
+            <VerticalStackLayout Padding="10" Spacing="20">
+        
+                <!-- Totals Bar -->
+                <Frame BackgroundColor="LightGray" Padding="10" CornerRadius="20">
+                    <Grid ColumnDefinitions="*, Auto" Padding="5">
+                        <!-- Left-aligned TOTALS label -->
+                        <Label Text="TOTALS" FontSize="18" FontAttributes="Bold"
+                            VerticalOptions="Center" Grid.Column="0"/>
+
+                        <!-- Right-aligned KCAL label -->
+                        <Label Text="KCAL   " FontSize="18" FontAttributes="Bold"
+                            VerticalOptions="Center" Grid.Column="1"/>
+                    </Grid>
+                </Frame>
+
+
+
+                <!-- Nutrition & Water Information -->
+                <Grid ColumnDefinitions="*,*,*" RowDefinitions="Auto,Auto,Auto">
+                        
+                        <!-- Water information -->
+                        <VerticalStackLayout Grid.Column="0" HorizontalOptions="Center" Spacing="20">
+                                <Label Grid.Row="0" Grid.Column="0" Text="WATER"  FontSize="20" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+                                <Image Grid.Row="1" Grid.Column="0" Source="water.png" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center"/>
+                                <Label Grid.Row="2" Grid.Column="0"   Text="{Binding WaterCountLabel}"  FontSize="20" HorizontalTextAlignment="Center"/>
+                            
+                            
+                        </VerticalStackLayout>
+
+                        <!-- Healthy food information -->
+                        <VerticalStackLayout Grid.Column="1" HorizontalOptions="Center" Spacing="20">
+                                <Label Grid.Row="0" Grid.Column="1" Text="5 A Day"  FontSize="20" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+                                <Image Grid.Row="1" Grid.Column="1" Source="apple.png" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center"/>
+                                <Label Grid.Row="2" Grid.Column="1" Text="{Binding HealthyLabel}"  FontSize="20" HorizontalTextAlignment="Center"/>
+                            
+                        </VerticalStackLayout>
+                        
+                        
+                        
+                        
+                        
+                        
+                        <!-- Calorie Section on Right -->
+
+                         <!-- KCAL Breakdown -->
+                        <VerticalStackLayout Grid.Column="2" HorizontalOptions="Center" Spacing="20">
+                            <Grid ColumnDefinitions="Auto, Auto" ColumnSpacing="60" >
+                                <Label Text="   GOAL" FontSize="20" FontAttributes="Bold" Grid.Column="0"/>
+                                <Label Text="{Binding GoalTarget}" FontSize="20" Grid.Column="1"/>
+                            </Grid>
+
+                            <Grid ColumnDefinitions="Auto, Auto" ColumnSpacing="60">
+
+                                <Label Text=" - FOOD" FontSize="20" Grid.Column="0"/>
+                                <Label Text="{Binding TotalCalories}" FontSize="20" Grid.Column="1"/>
+                            
+                            </Grid>
+
+
+                            <!-- Exercise Breakdown -->
+                            <Grid ColumnDefinitions="Auto, Auto" ColumnSpacing="30">
+
+                                <Label Text=" + EXERCISE" FontSize="20" Grid.Column="0"/>
+                                <Label Text="{Binding ExerciseCalories}" FontSize="20" Grid.Column="1"/>
+                            </Grid>
+
+                            <!-- Line Separator -->
+                            <BoxView BackgroundColor="Black" HeightRequest="1" WidthRequest="100"/>
+
+                            <!-- Remaining Calories -->
+                            <Grid ColumnDefinitions="Auto, Auto" RowSpacing="20" ColumnSpacing="70">
+                                <Label Text="= LEFT" FontSize="20" FontAttributes="Bold" Grid.Column="0"/>
+                                <Label Text="{Binding RemainingCalories}" FontSize="20" Grid.Column="1"/>
+                            </Grid>
+                        </VerticalStackLayout>
+
+
+                    </Grid>
+
+                    
+
+            </VerticalStackLayout>  
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

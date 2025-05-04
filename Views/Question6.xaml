@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Nutrition.Views.Question6"
+             Title="Question6">
+            
+            
+     <VerticalStackLayout Spacing="20" Margin="10" Padding="20" VerticalOptions="FillAndExpand">
+    
+        <!--Question 6 Title-->
+        <Grid BackgroundColor="#EDB27E"
+            HeightRequest="100"
+            WidthRequest="500"
+            VerticalOptions="CenterAndExpand">
+            <Label Text="What is your weight goal ?"
+                FontSize="26"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"/>
+         </Grid>
+ 
+
+    <HorizontalStackLayout Spacing="10" Margin="10" Padding="20"  VerticalOptions="Center" HorizontalOptions="Center">
+            
+                    <!-- To lose weight Button -->
+                    <Button Text="To lose weight"
+                            BackgroundColor="#7EDCED" 
+                            Clicked="Question7_Clicked"
+                            TextColor="Black"
+                            FontSize="32"
+                            Padding="10"
+                            WidthRequest="200" 
+                            HeightRequest="200"
+                            LineBreakMode="WordWrap"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center" />
+
+                    <!-- To maintain weight Button -->
+                    <Button Text="Maintain weight"
+                            BackgroundColor="#7EDCED" 
+                            Clicked="Question7_Clicked"
+                            TextColor="Black"
+                            FontSize="32"
+                            Padding="20"
+                            WidthRequest="200"
+                            HeightRequest="200"
+                            LineBreakMode="WordWrap"                               
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"/>
+
+                    <!-- To gain weight Button -->
+                    <Button Text="To gain weight"
+                            BackgroundColor="#7EDCED" 
+                            Clicked="Question7_Clicked"
+                            TextColor="Black"
+                            FontSize="32"
+                            Padding="10"
+                            WidthRequest="200" 
+                            HeightRequest="200"
+                            LineBreakMode="WordWrap"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center" />
+
+                   
+    </HorizontalStackLayout>
+  </VerticalStackLayout>   
+</ContentPage>

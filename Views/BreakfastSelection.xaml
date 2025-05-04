@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Nutrition.Views.BreakfastSelection"
+             Title="Breakfast Selection">
+   
+    <VerticalStackLayout Padding="10" Spacing="20" >
+        <Label Text="Select a Breakfast Option:" FontSize="24" HorizontalOptions="Center" />
+
+        <!-- Breakfast Options -->
+        <Button Text="Semi skinned 125ml Milk" Clicked="MilkClicked" FontSize="20" />
+        <Button Text="Banana Weighted without skin 100g" Clicked="BananaClicked" FontSize="20"/>
+        <Button Text="Thick Pork Sausages 40g" Clicked="SausuagesClicked" FontSize="20"/>
+        <Button Text="Baked Beans small tin 150g" Clicked="BeansClicked" FontSize="20"/>
+        <Button Text="Bacon Rashers Grilled 50g" Clicked="BaconClicked" FontSize="20"/>
+        <Button Text="Weetabix 100g" Clicked="WeetabixClicked" FontSize="20"/>
+        <Button Text="250ml of Water" Clicked="WaterClicked" FontSize="20"/>
+
+        <Button Text="Back to Main Page" Clicked="OnBackClicked" FontSize="20"/>
+    </VerticalStackLayout>
+</ContentPage>

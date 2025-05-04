@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Nutrition.Views.Question3"
+             Title="Question3">
+
+
+     <VerticalStackLayout Padding="20" Spacing="100">
+
+        <!-- Label for the question -->
+       <Grid BackgroundColor="#EDB27E"
+            HeightRequest="100"
+            WidthRequest="500"
+            VerticalOptions="CenterAndExpand">
+            <Label Text="What is your current weight ?"
+                FontSize="26"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"/>
+         </Grid>
+
+        
+
+        <!-- Stones and Pounds Input -->
+        <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+            
+            <!-- Stones Input -->
+            <Entry x:Name="StonesEntry" 
+                      Keyboard="Numeric" 
+                      BackgroundColor="White"
+                      FontSize="28" 
+                       WidthRequest="170"
+                       HeightRequest="80" 
+                       HorizontalTextAlignment="Center"/>
+            <Label Text="St." FontSize="28" VerticalOptions="Center"/>
+       
+            <Label Text="       " FontSize="28" VerticalOptions="Center"/>
+       
+            <!-- Pounds Input -->
+           <Entry x:Name="PoundsEntry" 
+                     Keyboard="Numeric" 
+                     BackgroundColor="White"
+                     FontSize="28" 
+                     WidthRequest="170" 
+                     HeightRequest="80" 
+                     HorizontalTextAlignment="Center"/>
+            <Label Text="lb." FontSize="28" VerticalOptions="Center"/>
+
+        </HorizontalStackLayout>
+
+        <!-- Next Button -->
+        <Button Text="Next" 
+                BackgroundColor="#7EDCED" 
+                Clicked="Question4_Clicked"
+                TextColor="Black"
+                FontSize="28"
+                CornerRadius="10"
+                Padding="10"
+                WidthRequest="250"
+                HeightRequest="80" 
+                HorizontalOptions="Center"/>
+
+         
+
+
+         
+    </VerticalStackLayout>
+
+    
+</ContentPage>

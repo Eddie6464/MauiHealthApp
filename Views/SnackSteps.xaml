@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Nutrition.Views.SnackSteps"
+             Title="Snack Steps">
+   <VerticalStackLayout Padding="10" VerticalOptions="FillAndExpand">
+
+         <Grid BackgroundColor="#EDB27E"
+            HeightRequest="80"
+            WidthRequest="300"
+            VerticalOptions="CenterAndExpand">
+            <Label Text="Steps"
+                FontSize="32"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"/>
+        </Grid>
+      
+      <HorizontalStackLayout  Padding="20" HorizontalOptions="FillAndExpand" >
+
+        <VerticalStackLayout  Spacing="10" Padding="20" VerticalOptions="FillAndExpand">
+
+            <!--Step 1 to make snack-->
+            <Grid BackgroundColor="#EDB27E"
+                HeightRequest="50"
+                WidthRequest="250"
+                VerticalOptions="CenterAndExpand">
+                <Label Text="Step 1"
+                    FontSize="32"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"/>
+            </Grid>
+            <!--instruction to make snack for step 1-->
+            <Label Text= "Put the chickpeas, garlic, pepper, tahini and lemon juice in a bowl " LineBreakMode="WordWrap" WidthRequest="300"  HeightRequest="150" FontSize="20"/>
+
+            <!--Step 3 to make snack-->
+            <Grid BackgroundColor="#EDB27E"
+                HeightRequest="50"
+                WidthRequest="250"
+                VerticalOptions="CenterAndExpand">
+                <Label Text="Step 3"
+                    FontSize="32"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"/>
+            </Grid>
+            <!--instruction to make snack for step 3-->
+            <Label Text= "Pack into pots, if you like, and serve with the veggie sticks" LineBreakMode="WordWrap" WidthRequest="300"  HeightRequest="150" FontSize="20"/>
+
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Spacing="10" Padding="20" VerticalOptions="FillAndExpand">
+
+                <!--Step 2 to make snack-->
+                <Grid BackgroundColor="#EDB27E"
+                        HeightRequest="50"
+                        WidthRequest="250"
+                        VerticalOptions="CenterAndExpand">
+                        <Label Text="Step 2"
+                            FontSize="32"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"/>
+                </Grid>
+                <!--instruction to make snack for step 2-->
+                <Label Text="Blitz with a hand blender or in a food processor to make a thick purée. Stir in the walnuts. " LineBreakMode="WordWrap" WidthRequest="300"  HeightRequest="150" FontSize="20"/>
+
+                <!--Step 4 to make snack-->
+                 <Grid BackgroundColor="#EDB27E"
+                        HeightRequest="50"
+                        WidthRequest="250"
+                        VerticalOptions="CenterAndExpand">
+                        <Label Text="Step 4"
+                            FontSize="32"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"/>
+                    </Grid>
+                <!--instruction to make snack for step 4-->
+                <Label Text="Will keep in the fridge for two days, although the vegetables are best prepared fresh to preserve their vitamins." LineBreakMode="WordWrap" WidthRequest="300"  HeightRequest="150" FontSize="20"/>
+        
+        </VerticalStackLayout>
+     </HorizontalStackLayout>
+ </VerticalStackLayout>
+</ContentPage>

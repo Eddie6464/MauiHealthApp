@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Nutrition.Views.Breakfast"
+             Title="Breakfast">
+<VerticalStackLayout Padding="50" VerticalOptions="FillAndExpand">
+
+        <Grid BackgroundColor="#EDB27E"
+                HeightRequest="80"
+                WidthRequest="300"
+                VerticalOptions="CenterAndExpand">
+                <Label Text="Smashed peas on toast"
+                    FontSize="26"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"/>
+         </Grid>
+      
+     <HorizontalStackLayout  Padding="10" Spacing="20" HorizontalOptions="FillAndExpand">
+
+        <Image  Source="breakfast.png"
+                WidthRequest="300"
+                HeightRequest="300"
+                Aspect="AspectFit"/>
+
+        <VerticalStackLayout  Padding="15" VerticalOptions="FillAndExpand">
+
+                 <Label FontSize="22" 
+                        FontAttributes="Bold"  
+                        HorizontalOptions="Center">
+                     <Label.FormattedText>
+                         <FormattedString>
+                             <Span Text="Ingredients " TextDecorations="Underline"/>
+                         </FormattedString>
+                     </Label.FormattedText>
+                 </Label>
+                <!--ingredient list-->
+                <VerticalStackLayout  Spacing="8" Padding="10">
+                         <Label  Text=" • 200g freshly podded or frozen peas" FontSize="16"/>
+                         <Label  Text=" • 2 mint stalks leaves finely chopped" FontSize="16"/>
+                         <Label  Text=" • 1 lemon zested, plus a little juice" FontSize="16"/>
+                         <Label  Text=" • 1 tbsp extra virgin olive oil" FontSize="16"/>
+                         <Label  Text=" • 2 slices of bread (we used sourdough)" FontSize="16"/>
+                         <Label  Text=" • 2 eggs" FontSize="16"/>
+                         <Label  Text=" • pinch of chilli flakes" FontSize="16"/>
+              
+                </VerticalStackLayout>
+        </VerticalStackLayout>
+     </HorizontalStackLayout>
+
+     <Button  Text="Steps"
+                Clicked="BreakfastSteps_Clicked"
+                FontSize="28" 
+                FontAttributes="Bold"  
+                BackgroundColor="#D9D9D9"
+                WidthRequest="220"
+                TextColor="Black"
+                HorizontalOptions="Center"/>
+ </VerticalStackLayout>
+</ContentPage>
