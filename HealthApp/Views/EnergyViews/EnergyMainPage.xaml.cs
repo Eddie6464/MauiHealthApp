@@ -26,9 +26,9 @@ public partial class EnergyMainPage : ContentPage
 		var vm = ServiceHelper.GetService<ViewEnergyProfileViewModel>();
 		await Navigation.PushAsync(new EnergyProfilePage(vm));
 	}
-	private async void StepsTrackerButtonClicked(object sender, EventArgs e)
+	private async void WorkoutGeneratorButtonClicked(object sender, EventArgs e)
 	{
-		await Navigation.PushAsync(new StepsTrackerPage());
+		await Navigation.PushAsync(new WorkoutStartPage());
 	}
 }
 

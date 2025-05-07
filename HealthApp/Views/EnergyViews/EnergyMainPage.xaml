@@ -42,16 +42,16 @@
                         TextColor="Black"
                         Clicked="QuestionnaireButtonClicked"/>
                     <Button
-                        Text="Steps Tracker"
+                        Text="Workout Generator"
                         Grid.Row="2"
                         Grid.Column="2"
                         WidthRequest="225"
                         HeightRequest="175"
                         HorizontalOptions="Center"
                         VerticalOptions="Center"
-                        BackgroundColor="Yellow"
+                        BackgroundColor="#EDD942"
                         TextColor="Black"
-                        Clicked="StepsTrackerButtonClicked"/>
+                        Clicked="WorkoutGeneratorButtonClicked"/>
                     <Button
                         Text="Glossary"
                         Grid.Row="4"
