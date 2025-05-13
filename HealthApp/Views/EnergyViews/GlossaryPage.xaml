@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EnergyHealthApp.Views.GlossaryPage"
+             BackgroundColor="{StaticResource BackgroundColor}"
+             NavigationPage.HasNavigationBar="False">
+             <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="90"/>
+                    <RowDefinition Height="500"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="180"/>
+                    <ColumnDefinition Width="940"/>
+                    <ColumnDefinition Width="180"/>
+                </Grid.ColumnDefinitions>
+                <BoxView Style="{StaticResource TopBar}"
+                    Grid.ColumnSpan="3"/>
+                <Label
+                    Text="Glossary"
+                    Style="{StaticResource TopLabel}"
+                    Grid.Column="1"/>
+                <Button
+                    Grid.ColumnSpan="3"
+                    Style="{StaticResource HomeButton}"
+                    Clicked="HomeButtonClicked"/>
+                <ScrollView
+                    Grid.Row="1"
+                    Grid.Column="1">
+                    <StackLayout>
+                        <Label 
+                            Text="Blood Pressure - The pressure of blood pumping against the walls of blood vessels."
+                            Style="{StaticResource GlossaryDefinitionLabel}"/>
+                        <Label 
+                            Text="Diastolic (blood pressure) - The second number in your blood pressure reading. This represents the minimum pressure in your arteries when your heart is resting between beats and is measured in mmHg."
+                            Style="{StaticResource GlossaryDefinitionLabel}"/>
+                        <Label 
+                            Text="Heart Rate - The number of times your heart beats per minute, measured as bpm."
+                            Style="{StaticResource GlossaryDefinitionLabel}"/>
+                        <Label 
+                            Text="Respiratory Rate - The nunber of breaths you can take per minute, measured as bpm."
+                            Style="{StaticResource GlossaryDefinitionLabel}"/>
+                        <Label 
+                            Text="Systolic (blood pressure) - The first number in your blood pressure reading. This represents when your heart beats and pumps blood around your body."
+                            Style="{StaticResource GlossaryDefinitionLabel}"/>
+                    </StackLayout>
+                </ScrollView>
+             </Grid>
+</ContentPage>

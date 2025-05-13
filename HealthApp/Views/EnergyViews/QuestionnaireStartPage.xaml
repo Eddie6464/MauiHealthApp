@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EnergyHealthApp.Views.QuestionnaireStartPage"
+             BackgroundColor="{StaticResource BackgroundColor}"
+             NavigationPage.HasNavigationBar="False">
+             <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="90"/>
+                    <RowDefinition Height="400"/>
+                    <RowDefinition Height="150"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="180"/>
+                    <ColumnDefinition Width="940"/>
+                    <ColumnDefinition Width="180"/>
+                </Grid.ColumnDefinitions>
+                <BoxView 
+                    Style="{StaticResource TopBar}"
+                    Grid.ColumnSpan="3"/>
+                <Label
+                    Text="Questionnaire"
+                    Style="{StaticResource TopLabel}"
+                    Grid.Column="1"/>
+                <Button
+                    Grid.ColumnSpan="3"
+                    Style="{StaticResource HomeButton}"
+                    Clicked="HomeButtonClicked"/>
+                <Label
+                    Text="Each question will have an answer from 1-5, 1 being the least, and 5 being the most. Click below to start: "
+                    FontSize="20"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="3"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"/>
+                <Button
+                    Text="Start"
+                    BackgroundColor="#E373D8"
+                    TextColor="Black"
+                    FontSize="20"
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    HeightRequest="100"
+                    WidthRequest="200"
+                    Clicked="NewQuestionnaireButtonClicked"/>
+             </Grid>
+</ContentPage>

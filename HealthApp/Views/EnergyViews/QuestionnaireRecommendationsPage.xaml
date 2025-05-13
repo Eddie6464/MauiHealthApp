@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EnergyHealthApp.Views.QuestionnaireRecommendationsPage"
+             BackgroundColor="{StaticResource BackgroundColor}"
+             NavigationPage.HasNavigationBar="False">
+             <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="90"/>
+                    <RowDefinition Height="500"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="180"/>
+                    <ColumnDefinition Width="940"/>
+                    <ColumnDefinition Width="180"/>
+                </Grid.ColumnDefinitions>
+                <BoxView Style="{StaticResource TopBar}"
+                    Grid.ColumnSpan="3"/>
+                <Label
+                    Text="Questionnaire - Recommendations"
+                    Style="{StaticResource TopLabel}"
+                    Grid.Column="1"/>
+                <Button
+                    Grid.ColumnSpan="3"
+                    Style="{StaticResource HomeButton}"
+                    Clicked="HomeButtonClicked"/>
+                <CollectionView 
+                    ItemsSource="{Binding Recommendations}"
+                    Grid.Row="2"
+                    Grid.Column="1">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame 
+                            Margin="5" 
+                            Padding="10" 
+                            BackgroundColor="{StaticResource BackgroundColor}"
+                            BorderColor="Transparent">
+                            <Label 
+                                Text="{Binding}" 
+                                FontSize="18" 
+                                FontAttributes="Bold"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                HorizontalTextAlignment="Center"
+                                VerticalTextAlignment="Center"/>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+                </CollectionView>
+
+             </Grid>
+</ContentPage>
