@@ -27,6 +27,11 @@ public partial class MakingPlansPage : ContentPage
 		Navigation.PushAsync(new ShowPlansPage(username4));
 	}
 
+	private void OnShowQuestionaireClick(object sender, EventArgs e)
+	{
+		Navigation.PushAsync(new ShowQuestionairePage(username4));
+	}
+
 	private void OnQuestionaireClick(object sender, EventArgs e)
 	{
 		Navigation.PushAsync(new QuestionairePage(username4));

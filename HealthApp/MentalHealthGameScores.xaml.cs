@@ -33,7 +33,8 @@ public partial class MentalHealthGameScores : ContentPage
         }
         else{
            await DisplayAlert("Invalid Date", "Please enter valid dates in both fields.", "OK");
-        }
+           label.Text="invalid input";
+		}
 	}
 
 	private void OnBackClick(object sender, EventArgs e)

@@ -59,6 +59,16 @@
                 Clicked="OnShowPlansClick"/>
 
             <Button
+                x:Name="ShowQuestionaireBtn"
+                Padding="50"
+                TextColor="#7B225B"
+                BackgroundColor="#ED7EC4"
+                Text="Show Plans" 
+                FontSize="Medium"
+                VerticalOptions="Fill" 
+                Clicked="OnShowPlansClick"/>
+
+            <Button
                 x:Name="BackBtn"
                 Padding="30"
                 Clicked="OnBackClick"

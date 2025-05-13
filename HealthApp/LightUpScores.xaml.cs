@@ -33,6 +33,7 @@ public partial class LightUpScores : ContentPage
         }
         else{
            await DisplayAlert("Invalid Date", "Please enter valid dates in both fields.", "OK");
+		   label.Text="invalid input";
         }
 	}
 

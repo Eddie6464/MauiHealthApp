@@ -34,9 +34,4 @@ public partial class PlansEndPage : ContentPage
 		Navigation.PushAsync(new MakingPlansPage(username10));
 	}
 
-	private void OnShowPlansClick(object sender, EventArgs e)
-	{
-		Navigation.PushAsync(new ShowPlansPage(username10));
-	}
-
 }

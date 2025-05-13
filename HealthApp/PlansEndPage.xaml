@@ -65,17 +65,6 @@
                 BackgroundColor="#EDB27E"/>
 
             <Button
-                x:Name="ShowPlansBtn"
-                Padding="40"
-                Text="Show Plans" 
-                TextColor="#7C225B"
-                BackgroundColor="#ED7EC4"
-                FontSize="Medium"
-                VerticalOptions="Fill"
-                Clicked="OnShowPlansClick"
-                 />
-
-            <Button
                 x:Name="MakingPlansBtn"
                 Padding="40"
                 Text="Back to Making Plans" 

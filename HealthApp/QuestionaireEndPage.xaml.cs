@@ -79,6 +79,10 @@ public partial class QuestionaireEndPage : ContentPage
 			String text2 = "Could include methods to reduce stress in plan";
 		 Q1.Text = text2;
 		}
+		if(list7[0]<3){
+			String text13 = "Nothing recommened to include in plan";
+			Q1.Text = text13;
+		}
 		if(list7[1]>3){
 			String text3 = "Inlclude include methods to improve sleep, such as a sleep schedule in plan";
 		 Q2.Text = text3;
@@ -86,6 +90,10 @@ public partial class QuestionaireEndPage : ContentPage
 		if(list7[1]==3){
 			String text4 = "Could include methods to improve sleep, such as a sleep schedule in plan";
 		 Q2.Text = text4;
+		}
+		if(list7[1]<3){
+			String text13 = "Nothing recommened to include in plan";
+			Q2.Text = text13;
 		}
 		if(list7[2]>3){
 			String text5 = "Include methods to distract your mind from overthinking in plan";
@@ -95,6 +103,10 @@ public partial class QuestionaireEndPage : ContentPage
 			String text6 = "Could include methods to distract your mind from overthinking in plan";
 		 Q3.Text = text6;
 		}
+		if(list7[2]<3){
+			String text13 = "Nothing recommened to include in plan";
+			Q3.Text = text13;
+		}
 		if(list7[3]>3){
 			String text7 = "Include methods to improve your diet in plan";
 		 Q4.Text = text7;
@@ -102,6 +114,10 @@ public partial class QuestionaireEndPage : ContentPage
 		if(list7[3]==3){
 			String text8 = "Could include methods to improve your diet in plan";
 		 Q4.Text = text8;
+		}
+		if(list7[3]<3){
+			String text13 = "Nothing recommened to include in plan";
+			Q4.Text = text13;
 		}
 		if(list7[4]>3){
 			String text9 = "Include methods to increase water intake in plan";
@@ -111,18 +127,21 @@ public partial class QuestionaireEndPage : ContentPage
 			String text10 = "Could include methods to increase water intake in plan";
 		 Q5.Text = text10;
 		}
+		if(list7[4]<3){
+			String text13 = "Nothing recommened to include in plan";
+			Q5.Text = text13;
+		}
 		if(list7[5]>3){
-			String text12 = "Could include methods to get out in nature more in plan";
+			String text12 = "Include methods to get out in nature more in plan";
 		 Q6.Text = text12;
 		}
 		if(list7[5]==3){
 			String text12 = "Could include methods to get out in nature more in plan";
 		 Q6.Text = text12;
 		}
-
-        else{
+		if(list7[5]<3){
 			String text13 = "Nothing recommened to include in plan";
-			Q1.Text = text13;
+			Q6.Text = text13;
 		}
 	}
 

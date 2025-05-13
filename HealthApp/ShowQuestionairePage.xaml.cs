@@ -25,9 +25,11 @@ public partial class ShowQuestionairePage : ContentPage
 		//    Question4.Text = (await _viewModel.GetQuestion4(username5, Entrynumber)).ToString();
 		//    Question5.Text = (await _viewModel.GetQuestion5(username5, Entrynumber)).ToString();
 		//    Question6.Text = (await _viewModel.GetQuestion6(username5, Entrynumber)).ToString();
-        }
+        Question1.Text = "database unavailable";
+		}
         else{
            await DisplayAlert("Invalid Input", "Please enter a valid number.", "OK");
+		   Question1.Text = "invalid input";
         }
 		
 

@@ -28,6 +28,7 @@ public partial class ShowPlansPage : ContentPage
         }
         else{
            await DisplayAlert("Invalid Input", "Please enter a valid number.", "OK");
+		   Step1.Text = "invalid input";
         }
 		
 
