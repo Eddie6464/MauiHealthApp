@@ -296,3 +296,81 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.StressPage.xaml
 build_metadata.AdditionalFiles.TargetPath = StressPage.xaml
 build_metadata.AdditionalFiles.RelativePath = StressPage.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/Views/EnergyViews/EnergyMainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.Views.EnergyViews.EnergyMainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\EnergyViews\EnergyMainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\EnergyViews\EnergyMainPage.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/Views/EnergyViews/EnergyProfileEntryPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.Views.EnergyViews.EnergyProfileEntryPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\EnergyViews\EnergyProfileEntryPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\EnergyViews\EnergyProfileEntryPage.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/Views/EnergyViews/EnergyProfilePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.Views.EnergyViews.EnergyProfilePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\EnergyViews\EnergyProfilePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\EnergyViews\EnergyProfilePage.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/Views/EnergyViews/GlossaryPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.Views.EnergyViews.GlossaryPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\EnergyViews\GlossaryPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\EnergyViews\GlossaryPage.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/Views/EnergyViews/OverviewPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.Views.EnergyViews.OverviewPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\EnergyViews\OverviewPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\EnergyViews\OverviewPage.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/Views/EnergyViews/QuestionnairePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.Views.EnergyViews.QuestionnairePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\EnergyViews\QuestionnairePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\EnergyViews\QuestionnairePage.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/Views/EnergyViews/QuestionnaireQuestionPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.Views.EnergyViews.QuestionnaireQuestionPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\EnergyViews\QuestionnaireQuestionPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\EnergyViews\QuestionnaireQuestionPage.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/Views/EnergyViews/QuestionnaireRecommendationsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.Views.EnergyViews.QuestionnaireRecommendationsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\EnergyViews\QuestionnaireRecommendationsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\EnergyViews\QuestionnaireRecommendationsPage.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/Views/EnergyViews/QuestionnaireResultsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.Views.EnergyViews.QuestionnaireResultsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\EnergyViews\QuestionnaireResultsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\EnergyViews\QuestionnaireResultsPage.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/Views/EnergyViews/QuestionnaireStartPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.Views.EnergyViews.QuestionnaireStartPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\EnergyViews\QuestionnaireStartPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\EnergyViews\QuestionnaireStartPage.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/Views/EnergyViews/StepsTrackerPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.Views.EnergyViews.StepsTrackerPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\EnergyViews\StepsTrackerPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\EnergyViews\StepsTrackerPage.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/Views/EnergyViews/WorkoutPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.Views.EnergyViews.WorkoutPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\EnergyViews\WorkoutPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\EnergyViews\WorkoutPage.xaml
+
+[C:/Users/User/Desktop/School/uni/classes/year3/softwaredev/summative/week20/HealthApp/Views/EnergyViews/WorkoutStartPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthApp.Views.EnergyViews.WorkoutStartPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\EnergyViews\WorkoutStartPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\EnergyViews\WorkoutStartPage.xaml
