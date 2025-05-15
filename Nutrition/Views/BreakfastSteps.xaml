@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Nutrition.Views.BreakfastSteps"
+             Title="Breakfast Steps">
+  <VerticalStackLayout Padding="10" VerticalOptions="FillAndExpand">
+
+         <Grid BackgroundColor="#EDB27E"
+            HeightRequest="80"
+            WidthRequest="300"
+            VerticalOptions="CenterAndExpand">
+            <Label Text="Steps"
+                FontSize="30"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"/>
+        </Grid>
+      
+      <HorizontalStackLayout  Padding="10" HorizontalOptions="FillAndExpand" >
+
+        <VerticalStackLayout  Spacing="20" Padding="10" VerticalOptions="FillAndExpand">
+
+
+            <Grid BackgroundColor="#EDB27E"
+                HeightRequest="50"
+                WidthRequest="250"
+                VerticalOptions="CenterAndExpand">
+                <Label Text="Step 1"
+                    FontSize="30"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"/>
+            </Grid>
+
+            <!--Steps to make breakfast-->
+            <Label Text= "Put the peas in a saucepan and cover with boiling water from the kettle. Cook over a medium heat for 1 min, then drain. " LineBreakMode="WordWrap" WidthRequest="330"  HeightRequest="150" FontSize="16"/>
+
+
+            <Grid BackgroundColor="#EDB27E"
+                HeightRequest="50"
+                WidthRequest="250"
+                VerticalOptions="CenterAndExpand">
+                <Label Text="Step 3"
+                    FontSize="30"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"/>
+            </Grid>
+
+            <Label Text= "Toast the bread and poach eggs, if you like. Pile the smashed peas onto the hot toast, put an egg on top, if using, and sprinkle over some chilli flakes if you enjoy a bit of spice." LineBreakMode="WordWrap" WidthRequest="330"  HeightRequest="150" FontSize="16"/>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Spacing="20" Padding="10" VerticalOptions="FillAndExpand">
+
+                 <Grid BackgroundColor="#EDB27E"
+                    HeightRequest="50"
+                    WidthRequest="250"
+                    VerticalOptions="CenterAndExpand">
+                    <Label Text="Step 2"
+                        FontSize="30"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"/>
+                </Grid>
+
+                <Label Text=" Tip the peas into a bowl and mash with a fork. Add a pinch of salt, the mint, lemon zest, a squeeze of lemon juice and the olive oil, then mix well. Can be eaten warm or cold. Will keep chilled for a day." LineBreakMode="WordWrap" WidthRequest="300"  HeightRequest="150" FontSize="16"/>
+
+                
+        </VerticalStackLayout>
+        
+     </HorizontalStackLayout>
+ </VerticalStackLayout>
+</ContentPage>

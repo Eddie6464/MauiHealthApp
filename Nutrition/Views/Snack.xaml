@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Nutrition.Views.Snack"
+             Title="Snack">
+
+ <VerticalStackLayout Padding="10" VerticalOptions="FillAndExpand">
+       
+        <!-- Snack Title -->
+       <Label Text="Snack" 
+              FontSize="32" 
+              FontAttributes="Bold" 
+              HorizontalOptions="Center"
+              VerticalOptions="Center"/>
+
+
+       <Grid BackgroundColor="#EDB27E"
+                HeightRequest="80"
+                WidthRequest="300"
+                VerticalOptions="CenterAndExpand">
+                <Label Text="Pepper and walnut hummus with veggie dippers"
+                    LineBreakMode="WordWrap" 
+                    FontSize="26"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"/>
+         </Grid>
+       
+       
+
+      
+      <HorizontalStackLayout  Padding="10" HorizontalOptions="FillAndExpand">
+
+        <!-- Snack Image -->
+        <Image  Source="snack.png"
+                WidthRequest="300"
+                HeightRequest="300"
+                Aspect="AspectFit"/>
+
+        <VerticalStackLayout  Padding="42" VerticalOptions="CenterAndExpand">
+
+                  <Label FontSize="22" 
+                        FontAttributes="Bold"  
+                        HorizontalOptions="Center">
+                     <Label.FormattedText>
+                         <FormattedString>
+                             <Span Text="Ingredients " TextDecorations="Underline"/>
+                         </FormattedString>
+                     </Label.FormattedText>
+                 </Label>
+
+                <!-- Snack ingredients -->
+                <VerticalStackLayout  Spacing="6" Padding="10">
+                         <Label  Text=" • 400g can chickpeas drained" FontSize="16"/>
+                         <Label  Text=" • 1 garlic clove" FontSize="16"/>
+                         <Label  Text=" • 1 large roasted red pepper from a jar 100g " FontSize="16"/>
+                         <Label  Text=" • 1 tbsp tahini paste" FontSize="16"/>
+                         <Label  Text=" • juice ½ lemon" FontSize="16"/>
+                         <Label  Text=" • 4 walnut halves chopped" FontSize="16"/>
+                         <Label  Text=" • 2 courgettes cut into batons" FontSize="16"/>
+                         <Label  Text=" • 2 carrots cut into batons " FontSize="16"/>  
+                         <Label  Text=" •  celery sticks, cut into batons" FontSize="16"/>
+                </VerticalStackLayout>
+        </VerticalStackLayout>
+     </HorizontalStackLayout>
+
+    <!-- show the steps -->
+     <Button  Text="Steps"
+                Clicked="SnackSteps_Clicked"
+                FontSize="28" 
+                FontAttributes="Bold"  
+                BackgroundColor="#D9D9D9"
+                WidthRequest="220"
+                TextColor="Black"
+                HorizontalOptions="Center"/>
+ </VerticalStackLayout>
+</ContentPage>

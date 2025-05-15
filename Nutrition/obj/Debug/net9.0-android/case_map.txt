@@ -1,0 +1,17 @@
+images/apple;images/apple
+images/breakfast;images/breakfast
+images/dotnet_bot;images/dotnet_bot
+images/female;images/female
+images/glutenfree;images/glutenfree
+images/highcalories;images/highcalories
+images/icon_about;images/icon_about
+images/icon_about_ios;images/icon_about_ios
+images/icon_notes;images/icon_notes
+images/icon_notes_ios;images/icon_notes_ios
+images/lowcalories;images/lowcalories
+images/lunch;images/lunch
+images/male;images/male
+images/plus_icon;images/plus_icon
+images/snack;images/snack
+images/water;images/water
+raw/aboutassets;raw/AboutAssets

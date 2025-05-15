@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Nutrition.Views.ExerciseSelection"
+             Title="Exercise Selection">
+    
+    <VerticalStackLayout Padding="10" Spacing="20">
+        <Label Text="Select a Exercise Option:" FontSize="24" HorizontalOptions="Center" />
+
+        <!-- Exercise Options -->
+        <Button Text="5 a side football 1 hour" Clicked="footballClicked" FontSize="20"/>
+        <Button Text="Jogging 30min" Clicked="JoggingClicked" FontSize="20"/>
+        <Button Text="Rowing 30min" Clicked="RowingClicked" FontSize="20"/>
+        <Button Text="Golf driving range 1 hour" Clicked="GolfClicked" FontSize="20"/>
+        <Button Text="Cycling 1 hour" Clicked="CyclingClicked" FontSize="20"/>
+        <Button Text="Swimming 30min" Clicked="SwimmingClicked" FontSize="20"/>
+        <Button Text="250ml of Water" Clicked="WaterClicked" FontSize="20"/>
+
+        <Button Text="Back to Main Page" Clicked="OnBackClicked" FontSize="20"/>
+    </VerticalStackLayout>
+</ContentPage>

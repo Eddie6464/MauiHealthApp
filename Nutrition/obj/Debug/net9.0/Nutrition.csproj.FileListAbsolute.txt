@@ -1,0 +1,5 @@
+/Users/henryrogers/Desktop/uni work/Nutrition copy 2/Nutrition/obj/Debug/net9.0/Nutrition.csproj.AssemblyReference.cache
+/Users/henryrogers/Desktop/uni work/Nutrition copy 2/Nutrition/obj/Debug/net9.0/Nutrition.GeneratedMSBuildEditorConfig.editorconfig
+/Users/henryrogers/Desktop/uni work/Nutrition copy 2/Nutrition/obj/Debug/net9.0/Nutrition.AssemblyInfoInputs.cache
+/Users/henryrogers/Desktop/uni work/Nutrition copy 2/Nutrition/obj/Debug/net9.0/Nutrition.AssemblyInfo.cs
+/Users/henryrogers/Desktop/uni work/Nutrition copy 2/Nutrition/obj/Debug/net9.0/Nutrition.csproj.CoreCompileInputs.cache

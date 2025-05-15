@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Nutrition.Views.Question8"
+             Title="Question8">
+     <VerticalStackLayout Spacing="20" Margin="10" Padding="20" VerticalOptions="FillAndExpand">
+      
+       <Grid BackgroundColor="#EDB27E"
+            HeightRequest="100"
+            WidthRequest="500"
+            VerticalOptions="CenterAndExpand">
+            <Label Text="Amount of weight per week"
+                FontSize="26"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"/>
+         </Grid>
+        
+        <VerticalStackLayout Spacing="20" Margin="10" Padding="20" VerticalOptions="CenterAndExpand">
+                
+
+            <HorizontalStackLayout Spacing="20" HorizontalOptions="Center">
+            
+                <VerticalStackLayout Spacing="20">
+                    <!-- 0.5 Ibs per week button -->
+                    <Button Text="0.5 lbs per week" 
+                        Clicked="CalorieCounter_Clicked" 
+                        WidthRequest="250"
+                        HeightRequest="150"
+                        FontSize="26"
+                       BackgroundColor="#7EDCED" 
+                        TextColor="Black" />
+                    <!-- 1 lbs per week button -->
+                     <Button Text="1 lbs per week"
+                        Clicked="CalorieCounter_Clicked"  
+                        WidthRequest="250"
+                        HeightRequest="150"
+                        FontSize="26"
+                        BackgroundColor="#7EDCED" 
+                        TextColor="Black" />
+            
+                </VerticalStackLayout>
+            
+                
+                <VerticalStackLayout Spacing="20">
+                    <!-- 1.5 lbs per week button -->
+                    <Button Text="1.5 lbs per week"  
+                        Clicked="CalorieCounter_Clicked" 
+                        WidthRequest="250"
+                        HeightRequest="150"
+                        FontSize="26"
+                       BackgroundColor="#7EDCED" 
+                        TextColor="Black" />
+                   
+                    <!-- 2 lbs per week button -->
+                    <Button Text="2 lbs per week" 
+                        Clicked="CalorieCounter_Clicked" 
+                        WidthRequest="250"
+                        HeightRequest="150"
+                        FontSize="26"
+                        BackgroundColor="#7EDCED" 
+                        TextColor="Black" />
+
+                </VerticalStackLayout>
+
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+
+    </VerticalStackLayout>
+
+</ContentPage>

@@ -1,0 +1,217 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net9.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Nutrition
+build_property.ProjectDir = /Users/henryrogers/Desktop/uni work/Nutrition copy 2/Nutrition/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[/Users/henryrogers/Desktop/uni work/Nutrition copy 2/Nutrition/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Nutrition.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[/Users/henryrogers/Desktop/uni work/Nutrition copy 2/Nutrition/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Nutrition.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[/Users/henryrogers/Desktop/uni work/Nutrition copy 2/Nutrition/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Nutrition.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Colors.xaml
+
+[/Users/henryrogers/Desktop/uni work/Nutrition copy 2/Nutrition/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Nutrition.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
+
+[/Users/henryrogers/Desktop/uni work/Nutrition copy 2/Nutrition/Views/BestFoods.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Nutrition.Views.BestFoods.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/BestFoods.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/BestFoods.xaml
+
+[/Users/henryrogers/Desktop/uni work/Nutrition copy 2/Nutrition/Views/Breakfast.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Nutrition.Views.Breakfast.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Breakfast.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Breakfast.xaml
+
+[/Users/henryrogers/Desktop/uni work/Nutrition copy 2/Nutrition/Views/BreakfastSelection.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Nutrition.Views.BreakfastSelection.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/BreakfastSelection.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/BreakfastSelection.xaml
+
+[/Users/henryrogers/Desktop/uni work/Nutrition copy 2/Nutrition/Views/BreakfastSteps.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Nutrition.Views.BreakfastSteps.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/BreakfastSteps.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/BreakfastSteps.xaml
+
+[/Users/henryrogers/Desktop/uni work/Nutrition copy 2/Nutrition/Views/CalorieCounter.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Nutrition.Views.CalorieCounter.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/CalorieCounter.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/CalorieCounter.xaml
+
+[/Users/henryrogers/Desktop/uni work/Nutrition copy 2/Nutrition/Views/DinnerSelection.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Nutrition.Views.DinnerSelection.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/DinnerSelection.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/DinnerSelection.xaml
+
+[/Users/henryrogers/Desktop/uni work/Nutrition copy 2/Nutrition/Views/ExerciseSelection.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Nutrition.Views.ExerciseSelection.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/ExerciseSelection.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/ExerciseSelection.xaml
+
+[/Users/henryrogers/Desktop/uni work/Nutrition copy 2/Nutrition/Views/GlutenFree.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Nutrition.Views.GlutenFree.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/GlutenFree.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/GlutenFree.xaml
+
+[/Users/henryrogers/Desktop/uni work/Nutrition copy 2/Nutrition/Views/GlutenFreeSteps.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Nutrition.Views.GlutenFreeSteps.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/GlutenFreeSteps.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/GlutenFreeSteps.xaml
+
+[/Users/henryrogers/Desktop/uni work/Nutrition copy 2/Nutrition/Views/HighCalories.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Nutrition.Views.HighCalories.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/HighCalories.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/HighCalories.xaml
+
+[/Users/henryrogers/Desktop/uni work/Nutrition copy 2/Nutrition/Views/HighCaloriesSteps.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Nutrition.Views.HighCaloriesSteps.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/HighCaloriesSteps.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/HighCaloriesSteps.xaml
+
+[/Users/henryrogers/Desktop/uni work/Nutrition copy 2/Nutrition/Views/LowCalories.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Nutrition.Views.LowCalories.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/LowCalories.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/LowCalories.xaml
+
+[/Users/henryrogers/Desktop/uni work/Nutrition copy 2/Nutrition/Views/LowCaloriesSteps.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Nutrition.Views.LowCaloriesSteps.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/LowCaloriesSteps.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/LowCaloriesSteps.xaml
+
+[/Users/henryrogers/Desktop/uni work/Nutrition copy 2/Nutrition/Views/Lunch.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Nutrition.Views.Lunch.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Lunch.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Lunch.xaml
+
+[/Users/henryrogers/Desktop/uni work/Nutrition copy 2/Nutrition/Views/LunchSelectionPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Nutrition.Views.LunchSelectionPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/LunchSelectionPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/LunchSelectionPage.xaml
+
+[/Users/henryrogers/Desktop/uni work/Nutrition copy 2/Nutrition/Views/LunchSteps.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Nutrition.Views.LunchSteps.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/LunchSteps.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/LunchSteps.xaml
+
+[/Users/henryrogers/Desktop/uni work/Nutrition copy 2/Nutrition/Views/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Nutrition.Views.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/MainPage.xaml
+
+[/Users/henryrogers/Desktop/uni work/Nutrition copy 2/Nutrition/Views/Question1.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Nutrition.Views.Question1.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Question1.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Question1.xaml
+
+[/Users/henryrogers/Desktop/uni work/Nutrition copy 2/Nutrition/Views/Question2.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Nutrition.Views.Question2.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Question2.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Question2.xaml
+
+[/Users/henryrogers/Desktop/uni work/Nutrition copy 2/Nutrition/Views/Question3.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Nutrition.Views.Question3.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Question3.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Question3.xaml
+
+[/Users/henryrogers/Desktop/uni work/Nutrition copy 2/Nutrition/Views/Question4.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Nutrition.Views.Question4.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Question4.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Question4.xaml
+
+[/Users/henryrogers/Desktop/uni work/Nutrition copy 2/Nutrition/Views/Question5.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Nutrition.Views.Question5.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Question5.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Question5.xaml
+
+[/Users/henryrogers/Desktop/uni work/Nutrition copy 2/Nutrition/Views/Question6.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Nutrition.Views.Question6.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Question6.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Question6.xaml
+
+[/Users/henryrogers/Desktop/uni work/Nutrition copy 2/Nutrition/Views/Question7.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Nutrition.Views.Question7.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Question7.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Question7.xaml
+
+[/Users/henryrogers/Desktop/uni work/Nutrition copy 2/Nutrition/Views/Question8.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Nutrition.Views.Question8.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Question8.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Question8.xaml
+
+[/Users/henryrogers/Desktop/uni work/Nutrition copy 2/Nutrition/Views/Recipes.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Nutrition.Views.Recipes.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Recipes.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Recipes.xaml
+
+[/Users/henryrogers/Desktop/uni work/Nutrition copy 2/Nutrition/Views/Snack.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Nutrition.Views.Snack.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Snack.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Snack.xaml
+
+[/Users/henryrogers/Desktop/uni work/Nutrition copy 2/Nutrition/Views/SnackSelection.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Nutrition.Views.SnackSelection.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/SnackSelection.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/SnackSelection.xaml
+
+[/Users/henryrogers/Desktop/uni work/Nutrition copy 2/Nutrition/Views/SnackSteps.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Nutrition.Views.SnackSteps.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/SnackSteps.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/SnackSteps.xaml

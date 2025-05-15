@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Nutrition.Views.Question1"
+             Title="Question1">
+    
+    <VerticalStackLayout Spacing="20" Margin="10" Padding="20" VerticalOptions="FillAndExpand">
+    
+        <Grid BackgroundColor="#EDB27E"
+            HeightRequest="100"
+            WidthRequest="300"
+            VerticalOptions="CenterAndExpand">
+            <Label Text="What is your gender ?"
+                FontSize="26"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"/>
+         </Grid>
+
+        <VerticalStackLayout Spacing="20" Margin="10" Padding="20" VerticalOptions="CenterAndExpand">
+                
+
+            <HorizontalStackLayout Spacing="20" HorizontalOptions="Center">
+
+                <VerticalStackLayout Spacing="20">
+                    <!-- image of the stick man -->
+                    <Image  Source="male.png"
+                        WidthRequest="250"
+                        HeightRequest="250"/>
+                    <!-- stick man button -->
+                    <Button Text="Male" 
+                                Clicked="Question2_Clicked" 
+                                WidthRequest="150"
+                                HeightRequest="100"
+                                FontSize="22"
+                                BackgroundColor="#7EDCED"
+                                TextColor="black" />
+
+                </VerticalStackLayout>
+
+                <VerticalStackLayout Spacing="20">
+                    <!-- female image -->
+                    <Image  Source="female.png"
+                        WidthRequest="250"
+                        HeightRequest="250"/>
+                    <!-- female button -->
+                    <Button Text="Female" 
+                                Clicked="Question2_Clicked" 
+                                WidthRequest="150"
+                                HeightRequest="100"
+                                FontSize="22"
+                                BackgroundColor="#7EDCED"
+                                TextColor="black" />
+
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>
