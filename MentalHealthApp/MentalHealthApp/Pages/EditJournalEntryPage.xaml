@@ -1,0 +1,24 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MentalHealthApp.EditJournalEntryPage"
+             Title="Edit Entry"
+             BackgroundColor="#E6F0FA">
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+
+        <Label Text="Title" FontAttributes="Bold"/>
+        <Entry x:Name="TitleEntry" Placeholder="Entry title"/>
+
+        <Label Text="Content" FontAttributes="Bold"/> 
+        <Editor x:Name="ContentEditor"
+                HeightRequest="200"
+                AutoSize="TextChanges"/>
+        
+
+        <Button Text="Save Changes"
+                Clicked="OnSaveClicked"
+                BackgroundColor="#6B5B95"
+                TextColor="White"/>
+
+    </VerticalStackLayout>
+</ContentPage>

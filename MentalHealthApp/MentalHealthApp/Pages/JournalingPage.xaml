@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MentalHealthApp.JournalingPage"
+             Title="Journaling"
+             BackgroundColor="#E6F0FA">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <Label Text="Write your thoughts" 
+                   FontSize="24" 
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="#2D3A60"/>
+            
+            <Border Stroke="#6B5B95"
+                    StrokeThickness="1"
+                    BackgroundColor="White"
+                    Padding="5"
+                    StrokeShape="RoundRectangle 8"
+                    Margin="0,5,0,5">
+
+            <Editor x:Name="JournalEditor"
+                    Placeholder="Start writing here..."
+                    AutoSize="TextChanges"
+                    HeightRequest="200"
+                    TextColor="#2D3A60"/>
+            </Border>
+
+            <Button Text="Save Entry"
+                    BackgroundColor="#FF6F61"
+                    TextColor="White"
+                    Clicked="OnSaveClicked"
+                    CornerRadius="10"
+                    HeightRequest="50"
+                    Margin="0,20,0,0"/>
+
+            <Button Text="View Past Entries"
+                    Clicked="OnHistoryClicked"
+                    BackgroundColor="#88B04B"
+                    TextColor="White"
+                    Margin="10"/>
+
+            <Button Text="Back to Activities"
+                    BackgroundColor="#CCCCCC"
+                    TextColor="Black"
+                    Clicked="OnBackToActivitiesClicked"
+                    CornerRadius="10"
+                    HeightRequest="50"/>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

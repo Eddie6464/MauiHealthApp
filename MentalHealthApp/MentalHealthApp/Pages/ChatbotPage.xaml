@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MentalHealthApp.ChatBotPage"
+             Title="Chat with Lumi"
+             BackgroundColor="#E6F0FA">
+
+    <Grid RowDefinitions="*,Auto,Auto,Auto">
+
+        <ScrollView x:Name="ChatScrollView" Grid.Row="0" Padding="10">
+            <VerticalStackLayout x:Name="ChatArea" Spacing="5" />
+        </ScrollView>
+
+        <HorizontalStackLayout Grid.Row="1"
+                               Spacing="10"
+                               Padding="10"
+                               HorizontalOptions="Center">
+
+            <Button Text="Anxious" 
+                    Clicked="OnAnxiousClicked"
+                    Style="{StaticResource EmotionButtonStyle}"
+                    BackgroundColor="#FF6F61" />
+
+            <Button Text="Sad" 
+                    Clicked="OnSadClicked"
+                    Style="{StaticResource EmotionButtonStyle}"
+                    BackgroundColor="#6B5B95" />
+
+            <Button Text="Stressed" 
+                    Clicked="OnStressedClicked"
+                    Style="{StaticResource EmotionButtonStyle}"
+                    BackgroundColor="#88B04B" />
+            
+            <Button Text="Clear Chat"
+                    Clicked="OnClearChatClicked"
+                    BackgroundColor="#ff0000"
+                    TextColor="White"
+                    FontSize="16"
+                    Margin="10" />
+
+        </HorizontalStackLayout>
+
+
+        <Grid Grid.Row="3"
+              Padding="10"
+              BackgroundColor="White"
+              ColumnDefinitions="*,*,*">
+
+            <Button Text="Back" 
+                    Grid.Column="0"
+                    Clicked="OnBackClicked"
+                    BackgroundColor="#CCCCCC"
+                    Style="{StaticResource NavButtonStyle}" />
+
+            <Button Text="Home"
+                    Grid.Column="1"
+                    Clicked="OnHomeClicked"
+                    BackgroundColor="#6B5B95"
+                    Style="{StaticResource PrimaryNavButtonStyle}" />
+
+            <Button Text="Next"
+                    Grid.Column="2"
+                    Clicked="OnNextClicked"
+                    BackgroundColor="#88B04B"
+                    Style="{StaticResource NavButtonStyle}" />
+
+        </Grid>
+
+    </Grid>
+</ContentPage>

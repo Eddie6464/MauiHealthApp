@@ -1,0 +1,29 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MentalHealthApp.StretchingSelectionPage"
+             Title="Choose Stretching Routine"
+             BackgroundColor="#E6F0FA">
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+        
+        <Button Text="Neck and Shoulders" 
+                Clicked="OnStretchingClicked"
+                BackgroundColor="#88B04B"/>
+        
+        <Button Text="Back Stretch" 
+                Clicked="OnStretchingClicked"
+                BackgroundColor="#FF6F61"/>
+        
+        <Button Text="Full Body" 
+                Clicked="OnStretchingClicked"/>
+
+        <Button Text="Go Back"
+                Clicked="OnBackClicked"
+                BackgroundColor="#2D3A60"
+                TextColor="Black"
+                FontSize="16"
+                CornerRadius="10"
+                HeightRequest="50"/>
+
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,25 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MentalHealthApp.EmotionHistoryPage"
+             Title="Emotion Records"
+             BackgroundColor="#E6F0FA">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15" >
+            
+            <Button Text="Back"
+                    Clicked="OnBackClicked"
+                    BackgroundColor="#6B5B95"
+                    TextColor="Black"
+                    FontSize="16"
+                    CornerRadius="10"
+                    HorizontalOptions="Start"
+                    Margin="0,0,0,10"
+                    />
+
+            <VerticalStackLayout x:Name="EmotionList" Spacing="15" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

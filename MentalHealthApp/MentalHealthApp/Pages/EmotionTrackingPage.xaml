@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MentalHealthApp.EmotionTrackingPage"
+             Title="Track Your Emotions"
+             BackgroundColor="#E6F0FA">
+
+    <Grid RowDefinitions="*,Auto">
+
+        <ScrollView Grid.Row="0">
+            <VerticalStackLayout Spacing="20" Padding="20">
+
+                <Label Text="How are you feeling today?" FontSize="20" HorizontalOptions="Center" TextColor="#2D3A60"/>
+
+                <Border Stroke="#6B5B95"
+                        StrokeThickness="1"
+                        StrokeShape="RoundRectangle 8"
+                        BackgroundColor="White"
+                        Padding="5"
+                        Margin="0,5,0,5">
+
+                    <Picker x:Name="emotionPicker" Title="Select your emotion" TextColor="Black">
+
+                        <Picker.Items>
+                            <x:String>😊 Happy</x:String>
+                            <x:String>😐 Neutral</x:String>
+                            <x:String>😔 Sad</x:String>
+                            <x:String>😡 Angry</x:String>
+                            <x:String>😰 Anxious</x:String>
+                            <x:String>😴 Tired</x:String>
+                        </Picker.Items>
+                    </Picker>
+                </Border>
+                
+                <Label Text="What did you do today?" FontSize="20" HorizontalOptions="Center" TextColor="#2D3A60"/>
+                <Border Stroke="#6B5B95"
+                        StrokeThickness="1"
+                        BackgroundColor="White"
+                        Padding="5"
+                        StrokeShape="RoundRectangle 8"
+                        Margin="0,5,0,5">
+                    <Editor x:Name="activitiesEditor" Placeholder="Describe your activities..." HeightRequest="100" TextColor="Black"/>
+                </Border>
+                
+
+                <Label Text="Additional thoughts" FontSize="20" HorizontalOptions="Center" TextColor="#2D3A60"/>
+                <Border Stroke="#6B5B95"
+                        StrokeThickness="1"
+                        BackgroundColor="White"
+                        Padding="5"
+                        StrokeShape="RoundRectangle 8"
+                        Margin="0,5,0,5">
+                    <Editor x:Name="commentsEditor" Placeholder="Add any additional comments..." HeightRequest="100" TextColor="Black"/>
+                </Border>
+                
+                
+                <Button Text="Save Entry"
+                        Clicked="OnSaveClicked"
+                        BackgroundColor="#6B5B95"
+                        TextColor="White"
+                        CornerRadius="10"
+                        FontSize="14"
+                        HeightRequest="40"/>
+                
+
+                <Button Text="View Past Entries"
+                        Clicked="OnViewHistoryClicked"
+                        BackgroundColor="#CCCCCC"
+                        TextColor="Black"
+                        FontSize="14"
+                        HeightRequest="40"/>
+            </VerticalStackLayout>
+        </ScrollView>
+
+
+        <Grid Grid.Row="1"
+              Padding="10"
+              BackgroundColor="White"
+              ColumnDefinitions="*,*,*">
+
+            <Button Text="Back"
+                    Grid.Column="0"
+                    Clicked="OnBackToActivitiesClicked"
+                    BackgroundColor="#CCCCCC"
+                    TextColor="Black"
+                    FontSize="16"
+                    CornerRadius="10"
+                    HeightRequest="50"
+                    HorizontalOptions="FillAndExpand"/>
+
+            
+            <Button Text="Home"
+                    Grid.Column="1"
+                    Clicked="OnHomeClicked"
+                    BackgroundColor="#6B5B95"
+                    TextColor="White"
+                    FontSize="16"
+                    CornerRadius="10"
+                    HeightRequest="50"
+                    HorizontalOptions="FillAndExpand"/>
+            
+
+            <Button Text="Next"
+                    Grid.Column="2"
+                    Clicked="OnNextClicked"
+                    BackgroundColor="#88B04B"
+                    TextColor="White"
+                    FontSize="16"
+                    CornerRadius="10"
+                    HeightRequest="50"
+                    HorizontalOptions="FillAndExpand"/>
+        </Grid>
+
+    </Grid>
+
+</ContentPage>

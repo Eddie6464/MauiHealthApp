@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MentalHealthApp.ActivitiesPage"
+             Title="Activities"
+             BackgroundColor="#E6F0FA">
+
+    <Grid RowDefinitions="*, Auto">
+
+        
+        <ScrollView Grid.Row="0">
+            <VerticalStackLayout Spacing="20" Padding="20">
+
+                <Button Text="Breathing Exercise" 
+                        BackgroundColor="#FF6F61" 
+                        TextColor="White" 
+                        FontSize="16" 
+                        CornerRadius="10" 
+                        HeightRequest="50" 
+                        Clicked="OnBreathingExerciseClicked"/>
+
+                <Button Text="Journaling" 
+                        BackgroundColor="#6B5B95" 
+                        TextColor="White" 
+                        FontSize="16" 
+                        CornerRadius="10" 
+                        HeightRequest="50" 
+                        Clicked="OnJournalingClicked"/>
+
+                <Button Text="Stretching" 
+                        BackgroundColor="#88B04B" 
+                        TextColor="White" 
+                        FontSize="16" 
+                        CornerRadius="10" 
+                        HeightRequest="50" 
+                        Clicked="OnStretchingClicked"/>
+
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <Grid Grid.Row="1"
+      BackgroundColor="White"
+      Padding="10"
+      ColumnDefinitions="*,*,*">
+
+            <Button Text="Back" 
+            BackgroundColor="#CCCCCC" 
+            TextColor="Black" 
+            FontSize="16" 
+            CornerRadius="10" 
+            HeightRequest="50" 
+            Clicked="OnBackClicked"
+            Grid.Column="0"
+            HorizontalOptions="FillAndExpand"/>
+
+            <Button Text="Home" 
+            BackgroundColor="#6B5B95" 
+            TextColor="White" 
+            FontSize="16" 
+            CornerRadius="10" 
+            HeightRequest="50" 
+            Clicked="OnHomeClicked"
+            Grid.Column="1"
+            HorizontalOptions="FillAndExpand"/>
+
+            <Button Text="Next" 
+            BackgroundColor="#88B04B" 
+            TextColor="White" 
+            FontSize="16" 
+            CornerRadius="10" 
+            HeightRequest="50" 
+            Clicked="OnNextClicked"
+            Grid.Column="2"
+            HorizontalOptions="FillAndExpand"/>
+        </Grid>
+
+
+
+    </Grid>
+
+</ContentPage>

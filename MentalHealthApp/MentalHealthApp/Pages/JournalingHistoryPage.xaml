@@ -1,0 +1,64 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MentalHealthApp.JournalingHistoryPage"
+             Title="Journal History"
+             BackgroundColor="#E6F0FA">
+    
+    
+
+    <VerticalStackLayout Padding="10" Spacing="10">
+
+        <Button Text="Back"
+                Clicked="OnBackClicked"
+                BackgroundColor="#6B5B95"
+                TextColor="White"
+                FontSize="16"
+                CornerRadius="10"
+                HorizontalOptions="Start"
+                Margin="0,0,0,10"/>
+
+        <CollectionView x:Name="JournalListView"
+                        SelectionMode="Single"
+                        SelectionChanged="OnEntrySelected">
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Border Stroke="#CCCCCC"
+                            StrokeShape="RoundRectangle 10"
+                            Padding="10"
+                            Margin="5">
+
+                        <Grid ColumnDefinitions="*,Auto"
+                              ColumnSpacing="10"
+                              VerticalOptions="Center">
+
+                            <VerticalStackLayout Grid.Column="0" Spacing="2">
+                                <Label Text="{Binding Title}"
+                                       FontAttributes="Bold"
+                                       FontSize="16"
+                                       TextColor = "Black"/>
+
+                                <Label Text="{Binding CreatedDate, StringFormat='{0:g}'}"
+                                       FontSize="12"
+                                       TextColor="Black" />
+                            </VerticalStackLayout>
+
+                            <Button Grid.Column="1"
+                                    Text="Delete"
+                                    BackgroundColor="Red"
+                                    TextColor="White"
+                                    Clicked="OnDeleteClicked"
+                                    CornerRadius="5"
+                                    Padding="5,0"
+                                    BindingContext="{Binding}"/>
+
+                        </Grid>
+
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+
+        </CollectionView>
+
+    </VerticalStackLayout>
+</ContentPage>

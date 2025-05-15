@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MentalHealthApp.BreathingExercisePage"
+             Title="Breathing Exercise"
+             BackgroundColor="#E6F0FA">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <Label x:Name="ExerciseNameLabel" 
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="#2D3A60"/>
+
+            <Label x:Name="ExerciseDetailsLabel"
+                   FontSize="16"
+                   LineBreakMode="WordWrap"
+                   TextColor="#2D3A60"/>
+
+            <Button Text="Finish Exercise"
+                    BackgroundColor="#6B5B95"
+                    TextColor="White"
+                    Clicked="OnFinishClicked"
+                    CornerRadius="10"
+                    HeightRequest="50"
+                    Margin="0,20,0,0"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
